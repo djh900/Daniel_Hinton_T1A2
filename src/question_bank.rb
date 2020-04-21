@@ -8,11 +8,8 @@ question[3] = Option C
 question[4] = Option D
 question[5] = Correct Answer
 
-q1-5 $100
-q6-10 $200
-q11-15 $300
-q16-20 $500
-q21-25 $1,000
+$100 to $10,000 five questions each
+$20,000 to $1,000,000 three questions each
 =end
 
 q1 = ["In the 1960s, The Righteous Brothers had a number one hit with 'You've Lost That' What",
@@ -89,3 +86,104 @@ q24 = ["In golf, if someone scores a bogey on a par five hole, how many shots di
 
 q25 = ["The village and historic site of Port Arthur is located on which section of Tasmania's coastline",
 "North-east", "North-west", "South-east", "South-west", "C"]
+
+q26 = ["In 2019, which celebrity received an Order of Australia for their contributions to both entertainment and charitable services",
+"Paul Hogan", "Nicole Kidman", "Kylie Minogue", "Jimmy Barnes", "C"]
+
+q27 = ["Mel Blanc is best known for providing the voice of which famous character",
+"Kermit the Frog", "Bugs Bunny", "Homer Simpson", "Darth Vader", "B"]
+
+q28 = ["An investigation that aims to find incriminating evidence is known as a what 'expidition'",
+"Hunting", "Fishing", "Jungle", "Arctic", "B"]
+
+q29 = ["Built in 1880 and stretching more than five thousand kilometres is Australia's what 'Fence'",
+"Dingo", "Emu", "Wombat", "Kangaroo", "A"]
+
+q30 = ["Which of these countries has never hosted a Winter Olympic Games",
+"Japan", "New Zealand", "South Korea", "Italy", "B"]
+
+q31 = ["In credit cards and banking, what does the 'V' represent in the abbreviation 'CVC'",
+"Verification", "Voucher", "Vital", "Visa", "A"]
+
+q32 = ["45 degrees Celcius is closest to how many degrees Farenheit",
+"90", "115", "140", "160", "B"]
+
+q33 = ["Funding given to a new business to help if get started is known as what 'capital'",
+"Seed", "Bloom", "Leaf", "Bud", "A"]
+
+q34 = ["'Wessex saddbleback' is the name of a breed of what",
+"Pig", "Goat", "Cow", "Horse", "A"]
+
+q35 = ["In the Australian Parliament, the upper house is also known as the what",
+"Crossbench", "Senate", "House of Representatives", "Opposition", "B"]
+
+q36 = ["Which of these political figures was born in the 1950s",
+"Jacinta Ardern", "Malcolm Turnbull", "Justin Trudeau", "Donald Trump", "B"]
+
+q37 = ["Under Australian law, flour used in commercial breadmaking must contain what 'acid'",
+"Ascorbic", "Folic", "Citric", "Hydrochloric", "B"]
+
+q38 = ["In the sport of boxing, which weight division is immediately below heavyweight",
+"Middleweight", "Welterweight", "Cruiserweight", "Bantamweight", "C"]
+
+q39 = ["In 2015, Carly Simon confirmed that at least part of her famous 1972 song 'You're So Vain' was about who?",
+"Burt Reynolds", "Dudley Moore", "Robert Redford", "Warren Beatty", "D"]
+
+q40 = ["Published in 2018 was Andy Griffith and Terry Denton's what '-Story TreeHouse",
+"10", "14", "104", "140", "C"]
+
+q41 = ["Which of these is the name of both a city in Wales and a town in Tasmania",
+"Swansea", "Newport", "Colwyn Bay", "St Davids", "A"]
+
+q42 = ["Which of these best describes the word 'ignominious'",
+"Crumpled", "Thoughtful", "Shameful", "Proud", "C"]
+
+q43 = ["Who directed the 1975 Australian film 'Picnic at Hanging Rock'",
+"Jane Campion", "Peter Weir", "Baz Luhrmann", "George Miller", "B"]
+
+q44 = ["Which of these is the name of a model of car produced by Volkswagen-owned car maker Skoda",
+"Leprechaun", "Sasquatch", "Bunyip", "Yeti", "D"]
+
+q45 = ["By definition, 'epigraphy' is the study of ancient what",
+"Allergies", "Inscriptions", "Farming Practices", "Diets", "B"]
+
+q46 = ["Jacqueline Kennedy famously described the presidency of John F. Kennedy as which legendary place",
+"Utopia", "Shangri-La", "El Dorado", "Camelot", "D"]
+
+q47 = ["The Venetian island of Burano is best known for the production of a type of what",
+"Lace", "Leather", "Denim", "Cotton", "A"]
+
+q48 = ["Which of these is closest in meaning to the word 'corpulent'",
+"Sharp", "Opaque", "Bulky", "Frozen", "C"]
+
+q49 = ["Actress Rebel Wilson famously made her big screen debut in which 2003 Australian film",
+"Take Away", "Kangaroo Jack", "Bad Eggs", "Fat Pizza", "D"]
+
+q50 = ["Which of these is the horizontal bar typically found at the base of a guitar head over which the strings are stretched",
+"Nut", "Bolt", "Saddle", "Bridge", "A"]
+
+q51 = ["In human anatomy, the term 'popliteal' refers to the back of what",
+"Skull", "Hand", "Knee", "Throat", "C"]
+
+q52 = ["The Corinth Canal is in which country",
+"Mexico", "Greece", "Spain", "India", "B"]
+
+q53 = ["Opening its first store in Arkansas in 1962, which of these is the world's largest and most profitable retail chain",
+"Walmart", "Target", "Costco", "Home Depot", "A"]
+
+q54 = ["By land area, which of New York City's five boroughs is the largest",
+"Queens", "Brooklyn", "Manhatten", "Staten Island", "A"]
+
+q55 = ["Geographically, which of these cities is closest to Berlin",
+"Vienna", "Prague", "Munich", "Budapest", "B"]
+
+q56 = ["In which year was the Australian Stock Exchange formed",
+"1877", "1907", "1937", "1987", "D"]
+
+# Up to $100,000 question
+
+q57 = 
+
+q58 = 
+
+q59 = 
