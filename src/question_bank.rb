@@ -180,10 +180,29 @@ q55 = ["Geographically, which of these cities is closest to Berlin",
 q56 = ["In which year was the Australian Stock Exchange formed",
 "1877", "1907", "1937", "1987", "D"]
 
-# Up to $100,000 question
+q57 = ["'The Red Room' is a 1908 painting by which artist",
+"Vincent Van Gogh", "Frederic Bazille", "Paul Cezanne", "Henri Matisse", "D"]
 
-q57 = 
+q58 = ["What is the name of the NASA rocket designed to return humans to the moon",
+"Juno", "Mars", "Minerva", "Ares", "D"]
 
-q58 = 
+q59 = ["Which of these is a type of collectible porcelain",
+"Royal Student", "Royal Dux", "Royal Tudor", "Royal Prefect", "B"]
 
-q59 = 
+q60 = ["Which of these gemstones is a form of aluminium oxide",
+"Diamond", "Jasper", "Emerald", "Sapphire", "D"]
+
+q61 = ["Thanks to a novel by James Joyce, which date is now known as Bloomsday",
+"July 17", "June 16", "May 15", "April 14", "B"]
+
+q62 = ["On the flag of the United Nations, which country is shown closest to the top of the flag",
+"New Zealand", "Norway", "Chile", "Iceland", "A"]
+
+q63 = ["Commonly known by his nickname, what was the full name of 'Banjo' Patterson",
+"Albert Burke", "Andrew Barton", "Adam Beaufort", "Adrian Banks", "B"]
+
+q64 = ["Which of Hollywood's four Warner Brothers died on the eve of their landmark premiere of 'The Jazz Singer'",
+"Albert", "Harry", "Jack", "Sam", "D"]
+
+q65 = ["Horowitz is the original surname of which American actor",
+"Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D"]
