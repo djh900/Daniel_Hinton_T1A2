@@ -13,14 +13,14 @@ The user starts a new game with the \$100 question. If they get that right, they
 
 Each question has a corresponding monetary value, as seen below:
 
-![money_tree](./img/money-tree.png)
+![money_tree](../img/money-tree.png)
 
 \$1,000 and \$10,000 are safe levels. Once the user gets those questions right, they are guaranteed to walk away with that money, even if they go on to get a question wrong.
 
 ######3. The Lifelines
 Just like in the TV show, users will have three lifelines they can use once during each game:
 
-![lifelines](./img/lifelines.png)
+![lifelines](../img/lifelines.png)
 * Ask the Audience - Ask a virtual studio audience the question and receive a poll of their answers
 * Phone a Friend - Phone a 'friend' and receive their take on the question
 * 50/50 - Remove two incorrect answers leaving a choice between only the right answer and one remaining wrong answer.
@@ -31,24 +31,17 @@ At any point in the game, the user may elect to walk away, and take all the mone
 ######5. The Host
 The game wouldn't be complete without a host, and that's where our very own, virtual Eddie McGuire comes in. Complete with quips, jokes and comments, the virtual Eddie provides a fun aspect to the game and helps increase its realism.
 
-![eddie_mcguire](./img/eddie-mcguire.png)
+![eddie_mcguire](../img/eddie-mcguire.png)
 
 ###User Experience
 When the user loads the game, they are presented with a menu containing the following options:
 * Play Millionaire!
-* View Achievements
 * Exit
 
 The 'Play Millionaire!' option takes the user to a new game of Who Wants to be a Millionaire. They will be prompted by the virtual host for their name, and then go on to be given the game's instructions. Then the user will be given the first question. They can answer with either 'A', 'B', 'C' or 'D' if they think they know the answer, or select '1' for Ask the Audience, '2' for Phone a Friend, '3' for 50/50, or '4' to walk away.
 
-'View Achievements' brings the user to a list of achievements they have accomplished in the game. These include:
-* Played a game of 'Millionaire'
-* Won $1,000
-* Won $10,000
-* Won $100,000
-* Won $250,000
-* Won $1 Million
-
 The 'Exit' option exits the user from the application.
 
 ###Control Flow
+
+![flow chart](../img/flow-chart.jpg)
