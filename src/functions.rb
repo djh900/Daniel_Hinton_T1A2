@@ -54,6 +54,8 @@ module Functions
     gets
   end
 
+  #GAME STARTS HERE
+
   module_function
   def playmillionaire
     system('clear')
@@ -167,5 +169,21 @@ module Functions
         puts "I'm sorry, That's not a valid answer. Please enter a valid input"
       end
     end
+  end
+
+  module_function
+  def cheque(username, prize)
+    asciiart = AsciiArt::AsciiArt.new
+    asciiart.cheque($username, prize)
+  end
+
+  module_function
+  def millionwin(answer)
+    puts "\n#{answer} is Locked in..."
+    sleep(2)
+    puts "You had $250,000..."
+    sleep(2)
+    puts "You've just won $1 MILLION!!!"
+    cheque($username, "$1 MILLION")
   end
 end
