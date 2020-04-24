@@ -56,7 +56,7 @@ module PlayMillionaire
       sleep(2)
       print "D: ".colorize(:red)
       puts question[4]
-      sleep(2)
+      sleep(1)
       puts "\n1: Lifeline"
       puts "2: Walk Away"
 
