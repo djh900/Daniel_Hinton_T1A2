@@ -6,6 +6,10 @@ question[2] = Option B
 question[3] = Option C
 question[4] = Option D
 question[5] = Correct Answer
+question[6] = Ask the Audience A%
+question[7] = Ask the Audience B%
+question[8] = Ask the Audience C%
+question[9] = Ask the Audience D%
 
 $100 to $10,000 five questions each
 $20,000 to $1,000,000 three questions each
@@ -14,199 +18,199 @@ $20,000 to $1,000,000 three questions each
 module QuestionBank
 
   q1 = ["In the 1960s, The Righteous Brothers had a number one hit with 'You've Lost That' What",
-  "Lovin' Feeling", "Caring Sensation", "Tender Heart", "Credit Card Again", "A"]
+  "Lovin' Feeling", "Caring Sensation", "Tender Heart", "Credit Card Again", "A", 84, 7, 6, 3]
 
   q2 = ["In a stadium or arena, the seating area farthest and highest from the stage is known as the what 'section'",
-  "Nosebleed", "Headache", "Eyestrain", "Crook Neck", "A"]
+  "Nosebleed", "Headache", "Eyestrain", "Crook Neck", "A", 88, 6, 4, 2]
 
   q3 = ["In basic mathematics, a whole non-negative number is known as a what number",
-  "Natural", "Biodynamic", "Organic", "Gluten-free", "A"]
+  "Natural", "Biodynamic", "Organic", "Gluten-free", "A", 76, 13, 11, 0]
 
   q4 = ["First airing in 2005 was the long running Australian TV series 'McLeod's' what",
-  "Daughters", "Uncles", "Sons", "Neighbours", "A"]
+  "Daughters", "Uncles", "Sons", "Neighbours", "A", 95, 1, 1, 3]
 
   q5 = ["'What's up Doc?' is a famous catchphrase of which character",
-  "Elmer Fudd", "Bugs Bunny", "Daffy Duck", "Mr Hyde", "B"]
+  "Elmer Fudd", "Bugs Bunny", "Daffy Duck", "Mr Hyde", "B", 14, 66, 18, 2]
 
   q6 = ["Born in Philidelphia in 1861, William Wrigley Jr is best known for selling what",
-  "Baseball Bats", "Sleeping Bags", "Chewing Gum", "Snakes", "C"]
+  "Baseball Bats", "Sleeping Bags", "Chewing Gum", "Snakes", "C", 9, 4, 85, 2]
 
   q7 = ["To be highly proficient at something is to 'have it down to a' what",
-  "Political science", "Foreign language", "English major", "Fine art", "D"]
+  "Political science", "Foreign language", "English major", "Fine art", "D", 3, 1, 7, 89]
 
   q8 = ["In the classic nursery rhyme 'This Little Piggy', the third little piggy did what",
-  "Stayed home", "Had roast beef", "Went to market", "Had none", "B"]
+  "Stayed home", "Had roast beef", "Went to market", "Had none", "B", 22, 37, 19, 22]
 
   q9 = ["Which of these is a common term that describes a light snowfall?",
-  "Sweeping", "Dusting", "Mopping", "Vacuuming", "B"]
+  "Sweeping", "Dusting", "Mopping", "Vacuuming", "B", 7, 79, 11, 3]
 
   q10 = ["The largest portion of something is commonly known as 'the what share'",
-  "Shark's", "Pig's", "Tiger's", "Lion's", "D"]
+  "Shark's", "Pig's", "Tiger's", "Lion's", "D", 7, 11, 9, 73]
 
   q11 = ["Which of these is the correct spelling for a word meaning a deep shaft, particularly one for drawing water",
-  "Bore", "Baw", "Boar", "Boor", "A"]
+  "Bore", "Baw", "Boar", "Boor", "A", 68, 7, 19, 6]
 
   q12 = ["What colour was the ball used in the first day-night test cricket match",
-  "Yellow", "Red", "White", "Pink", "D"]
+  "Yellow", "Red", "White", "Pink", "D", 5, 13, 35, 47]
 
   q13 = ["A colloquial term for a major sporting final is the 'what' dance",
-  "Barn", "Bush", "Big", "Belly", "C"]
+  "Barn", "Bush", "Big", "Belly", "C", 2, 8, 89, 1]
 
   q14 = ["Which of these is the name of a city in Ireland?",
-  "Cork", "Flint", "Hemp", "Felt", "A"]
+  "Cork", "Flint", "Hemp", "Felt", "A", 77, 8, 12, 3]
 
   q15 = ["Which of these words is both someone who rides a horse and a verb meaning 'to manoeuvre for advantage'",
-  "Cowboy", "Mountie", "Jockey", "Equestrian", "C"]
+  "Cowboy", "Mountie", "Jockey", "Equestrian", "C", 4, 3, 81, 12]
 
   q16 = ["Which of these is a type of gemstone",
-  "Beryl", "Ethyl", "Myrtle", "Phyllis", "A"]
+  "Beryl", "Ethyl", "Myrtle", "Phyllis", "A", 45, 15, 32, 8]
 
   q17 = ["Metal halide is the name for a type of what, commonly found in public spaces",
-  "Garbage Bin", "Lamp", "Park Bench", "Fence", "B"]
+  "Garbage Bin", "Lamp", "Park Bench", "Fence", "B", 30, 49, 15, 6]
 
   q18 = ["Which of these sports has a marked area known as the 'key'",
-  "Tennis", "Boxing", "Snooker", "Basketball", "D"]
+  "Tennis", "Boxing", "Snooker", "Basketball", "D", 12, 7, 13, 68]
 
   q19 = ["Which of these is a term meaning to force or trick a person into something",
-  "Wuhan", "Guangdong", "Shanghai", "Nanjing", "C"]
+  "Wuhan", "Guangdong", "Shanghai", "Nanjing", "C", 12, 20, 45, 23]
 
   q20 = ["Which of these most closely decribes an 'anomaly'",
-  "Calculated risk", "Deviation from the norm", "Binding agreement", "Type of monopoly", "B"]
+  "Calculated risk", "Deviation from the norm", "Binding agreement", "Type of monopoly", "B", 18, 46, 23, 9]
 
   q21 = ["Which of these is a 'proper fraction'",
-  "3/3", "3/5", "5/5", "5/3", "B"]
+  "3/3", "3/5", "5/5", "5/3", "B", 9, 78, 3, 10]
 
   q22 = ["'Thank U, Next' was an Australian number one hit single in 2018 for which singer",
-  "Cardi B", "Ariana Grande", "Mariah Carey", "Halsey", "B"]
+  "Cardi B", "Ariana Grande", "Mariah Carey", "Halsey", "B", 20, 35, 26, 19]
 
   q23 = ["A free national mobile phone recycling scheme in Australia is known as 'Mobile' what",
-  "Monitor", "Mountain", "Meltdown", "Muster", "D"]
+  "Monitor", "Mountain", "Meltdown", "Muster", "D", 13, 7, 19, 61]
 
   q24 = ["In golf, if someone scores a bogey on a par five hole, how many shots did they hit",
-  "Three", "Four", "Five", "Six", "D"]
+  "Three", "Four", "Five", "Six", "D", 11, 17, 29, 43]
 
   q25 = ["The village and historic site of Port Arthur is located on which section of Tasmania's coastline",
-  "North-east", "North-west", "South-east", "South-west", "C"]
+  "North-east", "North-west", "South-east", "South-west", "C", 12, 13, 42, 33]
 
   q26 = ["In 2019, which celebrity received an Order of Australia for their contributions to both entertainment and charitable services",
-  "Paul Hogan", "Nicole Kidman", "Kylie Minogue", "Jimmy Barnes", "C"]
+  "Paul Hogan", "Nicole Kidman", "Kylie Minogue", "Jimmy Barnes", "C", 15, 22, 37, 26]
 
   q27 = ["Mel Blanc is best known for providing the voice of which famous character",
-  "Kermit the Frog", "Bugs Bunny", "Homer Simpson", "Darth Vader", "B"]
+  "Kermit the Frog", "Bugs Bunny", "Homer Simpson", "Darth Vader", "B", 13, 55, 20, 12]
 
   q28 = ["An investigation that aims to find incriminating evidence is known as a what 'expidition'",
-  "Hunting", "Fishing", "Jungle", "Arctic", "B"]
+  "Hunting", "Fishing", "Jungle", "Arctic", "B", 22, 68, 7, 3]
 
   q29 = ["Built in 1880 and stretching more than five thousand kilometres is Australia's what 'Fence'",
-  "Dingo", "Emu", "Wombat", "Kangaroo", "A"]
+  "Dingo", "Emu", "Wombat", "Kangaroo", "A", 87, 2, 1, 10]
 
   q30 = ["Which of these countries has never hosted a Winter Olympic Games",
-  "Japan", "New Zealand", "South Korea", "Italy", "B"]
+  "Japan", "New Zealand", "South Korea", "Italy", "B", 11, 35, 19, 35]
 
   q31 = ["In credit cards and banking, what does the 'V' represent in the abbreviation 'CVC'",
-  "Verification", "Voucher", "Vital", "Visa", "A"]
+  "Verification", "Voucher", "Vital", "Visa", "A", 54, 11, 8, 27]
 
   q32 = ["45 degrees Celcius is closest to how many degrees Farenheit",
-  "90", "115", "140", "160", "B"]
+  "90", "115", "140", "160", "B", 9, 35, 38, 18]
 
   q33 = ["Funding given to a new business to help if get started is known as what 'capital'",
-  "Seed", "Bloom", "Leaf", "Bud", "A"]
+  "Seed", "Bloom", "Leaf", "Bud", "A", 44, 26, 9, 21]
 
   q34 = ["'Wessex saddbleback' is the name of a breed of what",
-  "Pig", "Goat", "Cow", "Horse", "A"]
+  "Pig", "Goat", "Cow", "Horse", "A", 23, 19, 22, 36]
 
   q35 = ["In the Australian Parliament, the upper house is also known as the what",
-  "Crossbench", "Senate", "House of Representatives", "Opposition", "B"]
+  "Crossbench", "Senate", "House of Representatives", "Opposition", "B", 11, 48, 34, 7]
 
   q36 = ["Which of these political figures was born in the 1950s",
-  "Jacinta Ardern", "Malcolm Turnbull", "Justin Trudeau", "Donald Trump", "B"]
+  "Jacinta Ardern", "Malcolm Turnbull", "Justin Trudeau", "Donald Trump", "B", 8, 42, 6, 44]
 
   q37 = ["Under Australian law, flour used in commercial breadmaking must contain what 'acid'",
-  "Ascorbic", "Folic", "Citric", "Hydrochloric", "B"]
+  "Ascorbic", "Folic", "Citric", "Hydrochloric", "B", 22, 39, 28, 11]
 
   q38 = ["In the sport of boxing, which weight division is immediately below heavyweight",
-  "Middleweight", "Welterweight", "Cruiserweight", "Bantamweight", "C"]
+  "Middleweight", "Welterweight", "Cruiserweight", "Bantamweight", "C", 26, 24, 39, 11]
 
   q39 = ["In 2015, Carly Simon confirmed that at least part of her famous 1972 song 'You're So Vain' was about who?",
-  "Burt Reynolds", "Dudley Moore", "Robert Redford", "Warren Beatty", "D"]
+  "Burt Reynolds", "Dudley Moore", "Robert Redford", "Warren Beatty", "D", 22, 17, 19, 42]
 
   q40 = ["Published in 2018 was Andy Griffith and Terry Denton's what '-Story TreeHouse",
-  "10", "14", "104", "140", "C"]
+  "10", "14", "104", "140", "C", 11, 27, 44, 18]
 
   q41 = ["Which of these is the name of both a city in Wales and a town in Tasmania",
-  "Swansea", "Newport", "Colwyn Bay", "St Davids", "A"]
+  "Swansea", "Newport", "Colwyn Bay", "St Davids", "A", 32, 29, 23, 16]
 
   q42 = ["Which of these best describes the word 'ignominious'",
-  "Crumpled", "Thoughtful", "Shameful", "Proud", "C"]
+  "Crumpled", "Thoughtful", "Shameful", "Proud", "C", 11, 35, 23, 31]
 
   q43 = ["Who directed the 1975 Australian film 'Picnic at Hanging Rock'",
-  "Jane Campion", "Peter Weir", "Baz Luhrmann", "George Miller", "B"]
+  "Jane Campion", "Peter Weir", "Baz Luhrmann", "George Miller", "B", 22, 51, 6, 21]
 
   q44 = ["Which of these is the name of a model of car produced by Volkswagen-owned car maker Skoda",
-  "Leprechaun", "Sasquatch", "Bunyip", "Yeti", "D"]
+  "Leprechaun", "Sasquatch", "Bunyip", "Yeti", "D", 9, 33, 19, 39]
 
   q45 = ["By definition, 'epigraphy' is the study of ancient what",
-  "Allergies", "Inscriptions", "Farming Practices", "Diets", "B"]
+  "Allergies", "Inscriptions", "Farming Practices", "Diets", "B", 12, 54, 8, 26]
 
   q46 = ["Jacqueline Kennedy famously described the presidency of John F. Kennedy as which legendary place",
-  "Utopia", "Shangri-La", "El Dorado", "Camelot", "D"]
+  "Utopia", "Shangri-La", "El Dorado", "Camelot", "D", 25, 29, 8, 38]
 
   q47 = ["The Venetian island of Burano is best known for the production of a type of what",
-  "Lace", "Leather", "Denim", "Cotton", "A"]
+  "Lace", "Leather", "Denim", "Cotton", "A", 19, 37, 12, 32]
 
   q48 = ["Which of these is closest in meaning to the word 'corpulent'",
-  "Sharp", "Opaque", "Bulky", "Frozen", "C"]
+  "Sharp", "Opaque", "Bulky", "Frozen", "C", 11, 23, 29, 37]
 
   q49 = ["Actress Rebel Wilson famously made her big screen debut in which 2003 Australian film",
-  "Take Away", "Kangaroo Jack", "Bad Eggs", "Fat Pizza", "D"]
+  "Take Away", "Kangaroo Jack", "Bad Eggs", "Fat Pizza", "D", 7, 46, 12, 38]
 
   q50 = ["Which of these is the horizontal bar typically found at the base of a guitar head over which the strings are stretched",
-  "Nut", "Bolt", "Saddle", "Bridge", "A"]
+  "Nut", "Bolt", "Saddle", "Bridge", "A", 39, 4, 27, 30]
 
   q51 = ["In human anatomy, the term 'popliteal' refers to the back of what",
-  "Skull", "Hand", "Knee", "Throat", "C"]
+  "Skull", "Hand", "Knee", "Throat", "C", 33, 17, 31, 19]
 
   q52 = ["The Corinth Canal is in which country",
-  "Mexico", "Greece", "Spain", "India", "B"]
+  "Mexico", "Greece", "Spain", "India", "B", 9, 28, 52, 21]
 
   q53 = ["Opening its first store in Arkansas in 1962, which of these is the world's largest and most profitable retail chain",
-  "Walmart", "Target", "Costco", "Home Depot", "A"]
+  "Walmart", "Target", "Costco", "Home Depot", "A", 35, 29, 26, 10]
 
   q54 = ["By land area, which of New York City's five boroughs is the largest",
-  "Queens", "Brooklyn", "Manhatten", "Staten Island", "A"]
+  "Queens", "Brooklyn", "Manhatten", "Staten Island", "A", 25, 23, 27, 25]
 
   q55 = ["Geographically, which of these cities is closest to Berlin",
-  "Vienna", "Prague", "Munich", "Budapest", "B"]
+  "Vienna", "Prague", "Munich", "Budapest", "B", 13, 28, 43, 16]
 
   q56 = ["In which year was the Australian Stock Exchange formed",
-  "1877", "1907", "1937", "1987", "D"]
+  "1877", "1907", "1937", "1987", "D", 19, 38, 21, 22]
 
   q57 = ["'The Red Room' is a 1908 painting by which artist",
-  "Vincent Van Gogh", "Frederic Bazille", "Paul Cezanne", "Henri Matisse", "D"]
+  "Vincent Van Gogh", "Frederic Bazille", "Paul Cezanne", "Henri Matisse", "D", 29, 8, 25, 38]
 
   q58 = ["What is the name of the NASA rocket designed to return humans to the moon",
-  "Juno", "Mars", "Minerva", "Ares", "D"]
+  "Juno", "Mars", "Minerva", "Ares", "D", 22, 18, 25, 35]
 
   q59 = ["Which of these is a type of collectible porcelain",
-  "Royal Student", "Royal Dux", "Royal Tudor", "Royal Prefect", "B"]
+  "Royal Student", "Royal Dux", "Royal Tudor", "Royal Prefect", "B", 12, 37, 16, 35]
 
   q60 = ["Which of these gemstones is a form of aluminium oxide",
-  "Diamond", "Jasper", "Emerald", "Sapphire", "D"]
+  "Diamond", "Jasper", "Emerald", "Sapphire", "D", 5, 27, 32, 36]
 
   q61 = ["Thanks to a novel by James Joyce, which date is now known as Bloomsday",
-  "July 17", "June 16", "May 15", "April 14", "B"]
+  "July 17", "June 16", "May 15", "April 14", "B", 25, 25, 25, 25]
 
   q62 = ["On the flag of the United Nations, which country is shown closest to the top of the flag",
-  "New Zealand", "Norway", "Chile", "Iceland", "A"]
+  "New Zealand", "Norway", "Chile", "Iceland", "A", 13, 29, 17, 41]
 
   q63 = ["Commonly known by his nickname, what was the full name of 'Banjo' Patterson",
-  "Albert Burke", "Andrew Barton", "Adam Beaufort", "Adrian Banks", "B"]
+  "Albert Burke", "Andrew Barton", "Adam Beaufort", "Adrian Banks", "B", 45, 31, 14, 10]
 
   q64 = ["Which of Hollywood's four Warner Brothers died on the eve of their landmark premiere of 'The Jazz Singer'",
-  "Albert", "Harry", "Jack", "Sam", "D"]
+  "Albert", "Harry", "Jack", "Sam", "D", 24, 26, 28, 22]
 
   q65 = ["Horowitz is the original surname of which American actor",
-  "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D"]
+  "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D", 38, 17, 27, 18]
 
   $questions100 = [q1, q2, q3, q4, q5]
   $questions200 = [q6, q7, q8, q9, q10]

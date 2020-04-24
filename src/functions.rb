@@ -85,7 +85,19 @@ module Functions
   module_function
   def asktheaudience(question)
     if $asktheaudience = true
-      #ATA results
+      puts "\nOk, audience, buzzers at the ready, vote now!"
+      sleep(1)
+      puts "....."
+      sleep(2)
+      puts "\nResults:"
+      print "A: ".colorize(:blue)
+      puts question[6] + "%"
+      print "B: ".colorize(:blue)
+      puts question[7] + "%"
+      print "C: ".colorize(:blue)
+      puts question[8] + "%"
+      print "D: ".colorize(:blue)
+      puts question[9] + "%"
       $asktheaudience = false
     else
       puts "I'm sorry, you've already used Ask the Audience"
