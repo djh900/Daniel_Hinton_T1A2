@@ -1,6 +1,8 @@
 require_relative './functions.rb'
 require_relative './question_bank.rb'
 
+require 'colorize'
+
 module PlayMillionaire
 
   class PlayMillionaire
@@ -26,15 +28,41 @@ module PlayMillionaire
     def questionfunc(question, questioncounter)
       system('clear')
       puts "Question #{questioncounter} is for #{$moneytree[questioncounter]}"
-      puts question
-      puts "1: Lifeline"
+      puts "\n" + question[0] + "?"
+      sleep(1)
+      print "A: ".colorize(:orange)
+      puts question[1]
+      sleep(1)
+      print "B: ".colorize(:orange)
+      puts question[2]
+      sleep(1)
+      print "C: ".colorize(:orange)
+      puts question[3]
+      sleep(1)
+      print "D: ".colorize(:orange)
+      puts question[4]
+      sleep(1)
+      puts "\n1: Lifeline"
       puts "2: Walk Away"
-      answer = gets.chomp
 
-      # case answer
-      # end
+      loop do
+        answer = gets.chomp.capitalize
+        
+        if answer == question[5]
+          puts "Correct!"
+          break
+        elsif answer == "1"
+          puts "Lifeline"
+        elsif answer == "2"
+          puts "Walk Away"
+          break
+        elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
+          puts "Incorrect"
+          break
+        else
+          puts "Error: Invalid response"
+        end
+      end
     end
-
   end
-
 end
