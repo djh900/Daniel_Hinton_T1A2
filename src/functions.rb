@@ -180,9 +180,11 @@ module Functions
   def millionwin(answer)
     puts "\n#{answer} is Locked in..."
     sleep(2)
-    puts "You had $250,000..."
+    puts "\nYou had $250,000..."
     sleep(2)
-    puts "You've just won $1 MILLION!!!"
+    puts "\nYou've just won $1 MILLION!!! Congratulations!"
+    sleep(2)
     cheque($username, "$1 MILLION")
+    puts "\nThanks for playing Who Wants to be a Millionare!"
   end
 end
