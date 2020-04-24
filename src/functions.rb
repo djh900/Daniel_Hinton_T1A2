@@ -82,4 +82,60 @@ module Functions
     playgame = PlayMillionaire::PlayMillionaire.new(questionstack, 1)
   end
 
+  module_function
+  def asktheaudience(question)
+    if $asktheaudience = true
+      #ATA results
+      $asktheaudience = false
+    else
+      puts "I'm sorry, you've already used Ask the Audience"
+    end
+  end
+
+  module_function
+  def phoneafriend(question)
+    if $phoneafriend = true
+      #pap results
+      $phoneafriend = false
+    else
+      puts "I'm sorry, you've already used Phone A Friend"
+    end
+  end
+
+  module_function
+  def fiftyfifty(question)
+    if $fiftyfifty = true
+      #5050 results
+      $fiftyfifty = false
+    else
+      puts "I'm sorry, you've already used 50/50"
+    end
+  end
+
+  module_function
+  def lifelines(question)
+    if $asktheaudience == false && $phoneafriend == false && $fiftyfifty == false
+      puts "I'm sorry, you're out of lifelines"
+    else
+      puts "Okay, you're going to use a lifeline."
+      puts "1. Ask the Audience" if $asktheaudience
+      puts "2. Phone a Friend" if $phoneafriend
+      puts "3. 50/50" if $fiftyfifty
+    end
+
+    loop do
+      lifeline = gets.chomp
+
+      case lifeline
+      when "1"
+        asktheaudience(question)
+      when "2"
+        phoneafriend(question)
+      when "3"
+        fiftyfifty(question)
+      else
+        puts "I'm sorry, That's not a valid answer"
+      end
+    end
+  end
 end

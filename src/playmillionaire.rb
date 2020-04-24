@@ -1,16 +1,14 @@
 require_relative './functions.rb'
 require_relative './questionbank.rb'
-require_relative './lifelines.rb'
 
 require 'colorize'
 
-module PlayMillionaire
 
+module PlayMillionaire
+  
   class PlayMillionaire
 
     include QuestionBank
-
-    include 
 
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
       5 => "$1,000", 6 => "$1,500", 7 => "$2,500", 8 => "$4,000", 9 => "$6,000",
@@ -18,6 +16,7 @@ module PlayMillionaire
       14 => "$250,000", 15 => "$1 Million"}
 
     def initialize(questionstack, questioncounter)
+      $lifelines = Lifelines::Lifelines.new
       system('clear')
       puts "Ok, let's play Who Wants to be a Millionaire!"
       sleep(2)
@@ -64,12 +63,12 @@ module PlayMillionaire
           gets
           break
         elsif answer == "1"
-          puts "Lifeline"
+          Functions::lifelines(question)
         elsif answer == "2"
           puts "Walk Away"
-          break
-          break
           puts "Congratulations, you walk away with #{$moneytree[questioncounter-1]}"
+          puts "Thanks for playing Who Wants to be a Millionaire!"
+          exit
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
           puts "\nIncorrect!"
           sleep(2)
