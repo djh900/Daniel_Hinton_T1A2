@@ -69,7 +69,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 |                                NON-NEGOTIABLE                                |
 |                                                                              |
 | Westpac                                               1992-9992094-299489102 |
-|______________________________________________________________________________| "
+|______________________________________________________________________________| ".colorize(:red)
     end
   end
 end
