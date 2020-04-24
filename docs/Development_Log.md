@@ -9,3 +9,15 @@ I was able to do some work on the project on monday before falling ill, such as 
 ![trello board 1](../img/trello-board-1.png)
 
 Well, time to get to work. The plan for today is to finish the first draft of the code, then debug and test it tomorrow.
+
+##### Saturday, April 25, 1:30am
+Wow, that was crazy. My first day spent completely coding something from scratch. It was hard work. It was super frustrating, encountering error after error. But finally, the app seems to be working. Of course, I will test it with greater scrutiny tomorrow but for the most part, the reward has been worth the effort.
+
+The Trello board now looks like this:
+
+![trello board 2](../img/trello-board-2.png)
+
+Until tomorrow.
+
+### Day 2
+##### Saturday, April 25, 3:00pm
