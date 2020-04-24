@@ -16,9 +16,10 @@ module PlayMillionaire
 
 
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
-      5 => "$1,000", 6 => "$1,500", 7 => "$2,500", 8 => "$4,000", 9 => "$6,000",
-      10 => "$10,000", 11 => "$20,000", 12 => "$50,000", 13 => "$100,000",
-      14 => "$250,000", 15 => "$1 Million"}
+      5 => "$1,000 and your first safe level", 6 => "$1,500", 7 => "$2,500",
+      8 => "$4,000", 9 => "$6,000", 10 => "$10,000 and your second safe level",
+      11 => "$20,000", 12 => "$50,000", 13 => "$100,000", 14 => "$250,000",
+      15 => "$1 Million"}
 
     $asktheaudience = true
     $phoneafriend = true
@@ -83,14 +84,14 @@ module PlayMillionaire
           sleep(1)
           system('clear')
           prize = $moneytree[questioncounter-1]
-          puts "\nCongratulations, you walk away with #{prize}"
+          puts "Congratulations, you walk away with #{prize}!"
           sleep(2)
           username = $username
           Functions::cheque(username, prize)
           sleep(2)
           puts "\nThanks for playing Who Wants to be a Millionaire!"
           exit
-        elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
+        elsif answer == "A" || answer == "B" || answer == "C" || answer == "D"
           puts "\n#{answer} is Locked in..."
           sleep(2)
           if questioncounter < 5
