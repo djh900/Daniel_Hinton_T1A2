@@ -1,5 +1,5 @@
 require_relative './functions.rb'
-require_relative './question_bank.rb'
+require_relative './questionbank.rb'
 
 require 'colorize'
 
@@ -47,11 +47,17 @@ module PlayMillionaire
       puts "2: Walk Away"
 
       loop do
+        print "\nRESPONSE: "
         answer = gets.chomp.capitalize
-        
+
+        puts "\nLocked in..."
+
+        sleep(2)
+        system('clear')
+
         if answer == question[5]
-          puts "\nCorrect!"
-          puts "You've won #{moneytree[questioncounter]}"
+          puts "Correct!"
+          puts "You've won #{$moneytree[questioncounter]}"
           puts
           puts "\nPress ENTER for the next question"
           gets
@@ -64,8 +70,10 @@ module PlayMillionaire
           break
           puts "Congratulations, you walk away with #{$moneytree[questioncounter-1]}"
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
-          puts "\nIncorrect"
+          puts "\nIncorrect!"
+          sleep(2)
           puts "\nSorry, you walk away with nothing"
+          sleep(2)
           puts "\nThanks for playing!"
           exit
         else

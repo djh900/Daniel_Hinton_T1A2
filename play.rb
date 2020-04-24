@@ -1,10 +1,7 @@
 require 'colorize'
 
-require_relative 'src/question_bank.rb'
-require_relative 'src/logo_ascii_art.rb'
-require_relative 'src/eddie_lines.rb'
-require_relative 'src/lifelines.rb'
 require_relative 'src/functions.rb'
+require_relative 'src/asciiart'
 
 # Load screen
 
