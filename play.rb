@@ -7,8 +7,9 @@ require_relative 'src/eddie_lines.rb'
 # Load screen
 
 system('clear')
-OpeningShot = AsciiArt::AsciiArt.new
-OpeningShot.loadscreen
-sleep(3)
+asciiArt = AsciiArt::AsciiArt.new
+asciiArt.loadscreen
+sleep(4)
 
 # Main Menu
+
