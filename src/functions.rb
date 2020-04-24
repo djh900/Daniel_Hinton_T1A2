@@ -2,9 +2,10 @@ require_relative "./playmillionaire.rb"
 
 module Functions
 
+# Function to avoid repeating puts "\n___" sleep(2)" for lines of text where needed
 module_function
   def sleeplines(inputarray)
-    firstline = true #prevent newline on first line
+    firstline = true # Prevent newline on first line
     for line in inputarray
       if firstline
         puts line
@@ -17,6 +18,7 @@ module_function
     end
   end
 
+  # Rules displayed when user opts to view rules at start of game
   module_function
   def rules
     system('clear')
@@ -38,8 +40,8 @@ module_function
     gets
   end
 
-  #GAME STARTS HERE
-
+  # PROGRAM STARTS HERE
+  # User enters name and decides if they wish to view the game rules
   module_function
   def playmillionaire
     system('clear')
@@ -64,10 +66,11 @@ module_function
         puts "\nI'm sorry, I didn't quite get that. Please enter 1 to hear the rules or 2 to play Millionaire"
       end
     end
-    questionstack = QuestionBank::questionstackgenerator
-    PlayMillionaire::PlayMillionaire.new(questionstack, 1)
+    questionstack = QuestionBank::questionstackgenerator # Generates a stack of 15 questions for each game
+    PlayMillionaire::PlayMillionaire.new(questionstack, 1) # Starts the first question
   end
 
+  # Ask the Audience lifeline
   module_function
   def asktheaudience(question)
     if $asktheaudience == true
@@ -90,6 +93,7 @@ module_function
     end
   end
 
+  #Phone a Friend lifeline
   module_function
   def phoneafriend(question)
     if $phoneafriend == true
@@ -104,6 +108,7 @@ module_function
     end
   end
 
+  # 50/50 lifeline
   module_function
   def fiftyfifty(question)
     if $fiftyfifty == true
@@ -122,6 +127,7 @@ module_function
     end
   end
 
+  # User decides which lifeline to use when opting to use a lifeline
   module_function
   def lifelines(question)
     if $asktheaudience == false && $phoneafriend == false && $fiftyfifty == false
@@ -154,12 +160,14 @@ module_function
     end
   end
 
+  # Designs the cheque ascii art displayed at the end of a game where the user walks away with a prize
   module_function
   def cheque(username, prize)
     asciiart = AsciiArt::AsciiArt.new
     asciiart.cheque($username, prize)
   end
 
+  # Function is run if the user gets all 15 questions correct
   module_function
   def millionwin(answer)
     puts "\n#{answer} is Locked in..."
