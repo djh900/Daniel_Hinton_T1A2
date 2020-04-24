@@ -143,7 +143,7 @@ module QuestionBank
   q27 = ["Mel Blanc is best known for providing the voice of which famous character",
   "Kermit the Frog", "Bugs Bunny", "Homer Simpson", "Darth Vader", "B", 13, 55, 20, 12, phoneafriend3("B")]
 
-  q28 = ["An investigation that aims to find incriminating evidence is known as a what 'expidition'",
+  q28 = ["An investigation that aims to find incriminating evidence is known as a what 'expedition'",
   "Hunting", "Fishing", "Jungle", "Arctic", "B", 22, 68, 7, 3, phoneafriend2("B")]
 
   q29 = ["Built in 1880 and stretching more than five thousand kilometres is Australia's what 'Fence'",
