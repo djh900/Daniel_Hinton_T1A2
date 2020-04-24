@@ -19,6 +19,7 @@ system('clear')
 puts "Welcome to Who Wants to be a Millionaire!"
 
 loop do
+  system('clear')
   puts "\nMAIN MENU"
   puts "------------"
   puts "1. Play Millionaire!"
