@@ -36,8 +36,11 @@ module PlayMillionaire
     
     end
 
+    # This function runs for each question in the question stack
     def questionfunc(question, questioncounter)
       system('clear')
+
+      # Question displayed on the screen
       puts "Question #{questioncounter} is for #{$moneytree[questioncounter]}"
       sleep(2)
       puts "\n" + question[0] + "?"
@@ -57,11 +60,12 @@ module PlayMillionaire
       puts "\n1: Lifeline"
       puts "2: Walk Away"
 
+      # The user gives their answer here
       loop do
         print "\nRESPONSE: "
         answer = gets.chomp.capitalize
 
-        if answer == question[5]
+        if answer == question[5] # Correct answer
           millionwin(answer) if questioncounter == 15
           puts "\n#{answer} is Locked in..."
           sleep(2)
@@ -74,9 +78,9 @@ module PlayMillionaire
           puts "\nPress ENTER for the next question"
           gets
           break
-        elsif answer == "1"
+        elsif answer == "1" # User wants to use a lifeline
           Functions::lifelines(question)
-        elsif answer == "2"
+        elsif answer == "2" # User opts to walk away
           puts "Walk Away"
           sleep(1)
           system('clear')
@@ -88,7 +92,7 @@ module PlayMillionaire
           sleep(2)
           puts "\nThanks for playing Who Wants to be a Millionaire!"
           exit
-        elsif answer == "A" || answer == "B" || answer == "C" || answer == "D"
+        elsif answer == "A" || answer == "B" || answer == "C" || answer == "D" #Incorrect answer
           puts "\n#{answer} is Locked in..."
           sleep(2)
           if questioncounter < 5
