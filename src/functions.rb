@@ -1,3 +1,5 @@
+require_relative "./playmillionaire.rb"
+
 module Functions
 
   module_function
@@ -54,21 +56,6 @@ module Functions
   end
 
   module_function
-  def questiontemplate
-
-  end
-  
-  module_function
-  def playmillionaire2
-    questionstack = QuestionBank::questionstackgenerator
-    system('clear')
-    puts "Ok, let's play Who Wants to be a Millionaire!"
-    sleep(2)
-    system('clear')
-    PlayMillionaire::PlayMillionaire.new
-  end
-
-  module_function
   def playmillionaire1
     system('clear')
     sleeplines(["Welcome to Who Wants to be a Millionaire!",
@@ -91,7 +78,8 @@ module Functions
         puts "\nI'm sorry, I didn't quite get that. Please enter 1 to hear the rules or 2 to play Millionaire"
       end
     end
-    playmillionaire2
+    questionstack = QuestionBank::questionstackgenerator
+    playgame = PlayMillionaire::PlayMillionaire.new(questionstack, 1)
   end
 
 end
