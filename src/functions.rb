@@ -127,10 +127,9 @@ module Functions
       sleep(2)
       puts "....."
       sleep(1)
-      case question[5]
-      when "A" || "B"
+      if question[5] == "A" || question[5] == "B"
         puts "The remaining answers are A and B"
-      when "C" || D
+      else
         puts "The remaining answers are C and D"
       end
       $fiftyfifty = false
