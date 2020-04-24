@@ -3,9 +3,6 @@ require_relative './questionbank.rb'
 require_relative './eddielines.rb'
 require_relative './asciiart.rb'
 
-require 'colorize'
-
-
 module PlayMillionaire
   
   class PlayMillionaire

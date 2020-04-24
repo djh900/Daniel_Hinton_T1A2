@@ -1,7 +1,5 @@
 require_relative "./playmillionaire.rb"
 
-require 'tty-spinner'
-
 module Functions
 
 # Function to avoid repeating puts "\n___" sleep(2)" for lines of text where needed
@@ -81,15 +79,24 @@ module_function
       spinner.auto_spin
       sleep(3)
       spinner.stop
-      puts "Results:"
-      print "A: ".colorize(:blue)
-      puts question[6].to_s + "%"
-      print "B: ".colorize(:blue)
-      puts question[7].to_s + "%"
-      print "C: ".colorize(:blue)
-      puts question[8].to_s + "%"
-      print "D: ".colorize(:blue)
-      puts question[9].to_s + "%"
+      # puts "Results:"
+      # print "A: ".colorize(:blue)
+      # puts question[6].to_s + "%"
+      # print "B: ".colorize(:blue)
+      # puts question[7].to_s + "%"
+      # print "C: ".colorize(:blue)
+      # puts question[8].to_s + "%"
+      # print "D: ".colorize(:blue)
+      # puts question[9].to_s + "%"
+      data = [
+        {name: 'A', value: question[6]*100, color: :bright_yellow, fill: '*'},
+        {name: 'B', value: question[7]*100, color: :bright_green, fill: 'x'},
+        {name: 'C', value: question[8]*100, color: :bright_magenta, fill: '@'},
+        {name: 'D', value: question[9]*100, color: :bright_cyan, fill: '+'}
+      ]
+      pie_chart = TTY::Pie.new(data: data, radius: 5)
+      puts pie_chart
+      sleep(1)
       $asktheaudience = false
     else
       puts "I'm sorry, you've already used Ask the Audience"
@@ -108,6 +115,7 @@ module_function
       puts "Hello?"
       sleep(1)
       puts question[10]
+      sleep(1)
       $phoneafriend = false
     else
       puts "I'm sorry, you've already used Phone A Friend"
@@ -128,6 +136,7 @@ module_function
       else
         puts "The remaining answers are C and D"
       end
+      sleep(1)
       $fiftyfifty = false
     else
       puts "I'm sorry, you've already used 50/50"
@@ -206,7 +215,7 @@ module_function
 
     for value in moneytree
       if value == moneytree[- count]
-        puts value.colorize(:red)
+        puts value.colorize(:background => :light_yellow)
       else
         puts value
       end
