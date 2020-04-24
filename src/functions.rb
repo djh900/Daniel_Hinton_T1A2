@@ -2,23 +2,7 @@ require_relative "./playmillionaire.rb"
 
 module Functions
 
-  module_function
-  def exitchecker
-    userinput = gets.chomp.capitalize
-    loop do
-      case userinput
-      when "Y"
-        puts "\nThanks for playing Who Wants to be a Millionaire!\n"
-        exit
-      when "N"
-        break
-      else
-        puts "I don't recognize that response"
-      end
-    end
-  end
-
-  module_function
+module_function
   def sleeplines(inputarray)
     firstline = true #prevent newline on first line
     for line in inputarray
