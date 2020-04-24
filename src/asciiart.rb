@@ -58,8 +58,18 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8888888888888888888MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM".colorize(:color => :light_blue, :background => :black)
     end
 
-    # def cheque
-    #   lorem
-    # end
+    def cheque(username, prize)
+      puts "|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
+| Who wants to be a Millionaire                                    19928800289 |
+|                                                                              |
+| Pay #{username}                                                              |
+|                                                                              |
+| The sum of #{prize}                                                          |
+|                                                                              |
+|                                NON-NEGOTIABLE                                |
+|                                                                              |
+| Westpac                                               1992-9992094-299489102 |
+|______________________________________________________________________________| "
+    end
   end
 end
