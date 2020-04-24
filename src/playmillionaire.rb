@@ -26,9 +26,6 @@ module PlayMillionaire
     $fiftyfifty = true
 
     def initialize(questionstack, questioncounter)
-      $asktheaudience = true
-      $phoneafriend = true
-      $fiftyfifty = true
       system('clear')
       puts "Ok, let's play Who Wants to be a Millionaire!"
       sleep(2)
@@ -103,7 +100,7 @@ module PlayMillionaire
           end
           array1 = ["\nI'm sorry, that's the wrong answer!",
           "The correct answer was #{question[5]}",
-          "Sorry, you walk away with $#{prize}",
+          "You leave with $#{prize}",
           "Thanks for playing!"]
           Functions::sleeplines(array1)
           username = $username
