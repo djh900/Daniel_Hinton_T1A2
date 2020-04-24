@@ -18,6 +18,9 @@ $20,000 to $1,000,000 three questions each
 
 module QuestionBank
 
+  # There are the different phone a friend functions
+  # Each question has one of these hard coded in if the user wants to phone a friend for that question
+  
   module_function
   def phoneafriend1(answer)
     "Ahh, that's easy, the answer is #{answer}"
@@ -56,6 +59,8 @@ module QuestionBank
   def phoneafriend8
     "Absolutely no idea. Sorry"
   end
+
+  # The question bank:
 
   q1 = ["In the 1960s, The Righteous Brothers had a number one hit with 'You've Lost That' What",
   "Lovin' Feeling", "Caring Sensation", "Tender Heart", "Credit Card Again", "A", 84, 7, 6, 3, phoneafriend1("A")]
@@ -252,6 +257,8 @@ module QuestionBank
   q65 = ["Horowitz is the original surname of which American actor",
   "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D", 38, 17, 27, 18, phoneafriend7]
 
+  # Placing the questions into their difficuly categories:
+
   $questions100 = [q1, q2, q3, q4, q5]
   $questions200 = [q6, q7, q8, q9, q10]
   $questions300 = [q11, q12, q13, q14, q15]
@@ -267,6 +274,8 @@ module QuestionBank
   $questions100k = [q57, q58, q59]
   $questions250k = [q60, q61, q62]
   $questions1million = [q63, q64, q65]
+
+  # Generating a new, random question stack for each game:
 
   module_function
   def questionstackgenerator
