@@ -189,7 +189,7 @@ module QuestionBank
   "Vincent Van Gogh", "Frederic Bazille", "Paul Cezanne", "Henri Matisse", "D", 29, 8, 25, 38]
 
   q58 = ["What is the name of the NASA rocket designed to return humans to the moon",
-  "Juno", "Mars", "Minerva", "Ares", "D", 22, 18, 25, 35]
+  "Juno", "Mars", "Minerva", "Ares *cough*", "D", 22, 18, 25, 35]
 
   q59 = ["Which of these is a type of collectible porcelain",
   "Royal Student", "Royal Dux", "Royal Tudor", "Royal Prefect", "B", 12, 37, 16, 35]
