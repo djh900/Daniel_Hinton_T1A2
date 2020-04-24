@@ -1,5 +1,6 @@
 require_relative './functions.rb'
 require_relative './questionbank.rb'
+require_relative './lifelines.rb'
 
 require 'colorize'
 
@@ -8,6 +9,8 @@ module PlayMillionaire
   class PlayMillionaire
 
     include QuestionBank
+
+    include 
 
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
       5 => "$1,000", 6 => "$1,500", 7 => "$2,500", 8 => "$4,000", 9 => "$6,000",
@@ -50,15 +53,13 @@ module PlayMillionaire
         print "\nRESPONSE: "
         answer = gets.chomp.capitalize
 
+        if answer == question[5]
         puts "\nLocked in..."
-
         sleep(2)
         system('clear')
-
-        if answer == question[5]
           puts "Correct!"
-          puts "You've won #{$moneytree[questioncounter]}"
-          puts
+          puts "\nYou've won #{$moneytree[questioncounter]}"
+          sleep(2)
           puts "\nPress ENTER for the next question"
           gets
           break
