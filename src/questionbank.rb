@@ -81,7 +81,7 @@ module QuestionBank
   q8 = ["In the classic nursery rhyme 'This Little Piggy', the third little piggy did what",
   "Stayed home", "Had roast beef", "Went to market", "Had none", "B", 22, 37, 19, 22, phoneafriend3("C")]
 
-  q9 = ["Which of these is a common term that describes a light snowfall?",
+  q9 = ["Which of these is a common term that describes a light snowfall",
   "Sweeping", "Dusting", "Mopping", "Vacuuming", "B", 7, 79, 11, 3, phoneafriend1("B")]
 
   q10 = ["The largest portion of something is commonly known as 'the what share'",
