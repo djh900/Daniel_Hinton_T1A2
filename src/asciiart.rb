@@ -62,9 +62,9 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
       puts "|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
 | Who wants to be a Millionaire                                    19928800289 |
 |                                                                              |
-| Pay #{username}                                                              |
+|   Pay #{username}                                                              
 |                                                                              |
-| The sum of #{prize}                                                          |
+|   The sum of #{prize}                                                          
 |                                                                              |
 |                                NON-NEGOTIABLE                                |
 |                                                                              |
