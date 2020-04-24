@@ -23,9 +23,9 @@ module QuestionBank
   "Natural", "Biodynamic", "Organic", "Gluten-free", "A"]
 
   q4 = ["First airing in 2005 was the long running Australian TV series 'McLeod's' what",
-  "Daughter", "Uncles", "Sons", "Neighbours", "A"]
+  "Daughters", "Uncles", "Sons", "Neighbours", "A"]
 
-  q5 = ["'What's up Doc? is a famous catchphrase of which character'",
+  q5 = ["'What's up Doc?' is a famous catchphrase of which character",
   "Elmer Fudd", "Bugs Bunny", "Daffy Duck", "Mr Hyde", "B"]
 
   q6 = ["Born in Philidelphia in 1861, William Wrigley Jr is best known for selling what",
@@ -238,9 +238,5 @@ module QuestionBank
 
     return questionstack
   end
-
-
-
-
 
 end

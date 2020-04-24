@@ -105,7 +105,12 @@ module Functions
   module_function
   def fiftyfifty(question)
     if $fiftyfifty = true
-      #5050 results
+      case question[5]
+      when "A" || "B"
+        puts "The remaining answers are A and B"
+      when "C" || D
+        puts "The remaining answers are C and D"
+      end
       $fiftyfifty = false
     else
       puts "I'm sorry, you've already used 50/50"
@@ -129,12 +134,15 @@ module Functions
       case lifeline
       when "1"
         asktheaudience(question)
+        break
       when "2"
         phoneafriend(question)
+        break
       when "3"
         fiftyfifty(question)
+        break
       else
-        puts "I'm sorry, That's not a valid answer"
+        puts "I'm sorry, That's not a valid answer. Please enter a valid input"
       end
     end
   end

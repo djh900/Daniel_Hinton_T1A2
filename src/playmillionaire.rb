@@ -1,5 +1,6 @@
 require_relative './functions.rb'
 require_relative './questionbank.rb'
+require_relative './eddielines.rb'
 
 require 'colorize'
 
@@ -16,7 +17,9 @@ module PlayMillionaire
       14 => "$250,000", 15 => "$1 Million"}
 
     def initialize(questionstack, questioncounter)
-      $lifelines = Lifelines::Lifelines.new
+      $asktheaudience = true
+      $phoneafriend = true
+      $fiftyfifty = true
       system('clear')
       puts "Ok, let's play Who Wants to be a Millionaire!"
       sleep(2)
@@ -33,16 +36,16 @@ module PlayMillionaire
       sleep(2)
       puts "\n" + question[0] + "?"
       sleep(4)
-      print "A: ".colorize(:orange)
+      print "A: ".colorize(:red)
       puts question[1]
       sleep(2)
-      print "B: ".colorize(:orange)
+      print "B: ".colorize(:red)
       puts question[2]
       sleep(2)
-      print "C: ".colorize(:orange)
+      print "C: ".colorize(:red)
       puts question[3]
       sleep(2)
-      print "D: ".colorize(:orange)
+      print "D: ".colorize(:red)
       puts question[4]
       sleep(2)
       puts "\n1: Lifeline"
@@ -53,12 +56,16 @@ module PlayMillionaire
         answer = gets.chomp.capitalize
 
         if answer == question[5]
-        puts "\nLocked in..."
+        puts "\n#{answer} is Locked in..."
         sleep(2)
         system('clear')
-          puts "Correct!"
+          
+          sleep (1)
+          EddieLines::eddieCorrectAnswer.sample
           puts "\nYou've won #{$moneytree[questioncounter]}"
-          sleep(2)
+          sleep(1)
+          EddieLines::eddieQuips.sample
+          sleep(1)
           puts "\nPress ENTER for the next question"
           gets
           break
