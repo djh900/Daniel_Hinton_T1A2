@@ -1,6 +1,5 @@
 =begin
-Question Structure
-----------------------
+Question Structure:
 question[0] = Question
 question[1] = Option A
 question[2] = Option B
@@ -208,5 +207,21 @@ module QuestionBank
 
   q65 = ["Horowitz is the original surname of which American actor",
   "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D"]
+
+  100qs = [q1, q2, q3, q4, q5]
+  200qs = [q6, q7, q8, q9, q10]
+  300qs = [q11, q12, q13, q14, q15]
+  500qs = [q16, q17, q18, q19, q20]
+  1000qs = [q21, q22, q23, q24, q25]
+  1500qs = [q26, q27, q28, q29, q30]
+  2500qs = [q31, q32, q33, q34, q35]
+  4000qs = [q36, q37, q38, q39, q40]
+  6000qs = [q41, q42, q43, q44, q45]
+  10000qs = [q46, q47, q48, q49, q50]
+  20000qs = [q51, q52, q53]
+  50000qs = [q54, q55, q56]
+  100000qs = [q57, q58, q59]
+  250000qs = [q60, q61, q62]
+  1millionqs = [q63, q64, q65]
 
 end
