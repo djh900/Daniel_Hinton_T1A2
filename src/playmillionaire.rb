@@ -100,7 +100,7 @@ module PlayMillionaire
           else 
             prize = "10,000"
           end
-          array1 = ["I'm sorry, that's the wrong answer!",
+          array1 = ["\nI'm sorry, that's the wrong answer!",
           "The correct answer was #{question[5]}",
           "Sorry, you walk away with $#{prize}",
           "Thanks for playing!"]
