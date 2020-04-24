@@ -34,8 +34,8 @@ Each question has a corresponding monetary value, as seen below:
 Just like in the TV show, users will have three lifelines they can use once during each game:
 
 ![lifelines](../img/lifelines.png)
-* Ask the Audience - Ask a virtual studio audience the question and receive a poll of their answers.
-* Phone a Friend - Phone a 'friend' and receive their take on the question.
+* Ask the Audience - Ask a virtual studio audience the question and receive a poll of their answers. The results are shows as a pie chart using the tty-pie gem.
+* Phone a Friend - Phone a 'friend' and receive their take on the question. There are 8 possible phone a friend responses ranging from 100% certainty of the answer to no idea.
 * 50/50 - Remove two incorrect answers leaving a choice between only the right answer and one remaining wrong answer.
 
 ##### 4. Walk Away
