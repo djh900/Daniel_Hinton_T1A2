@@ -28,20 +28,21 @@ module PlayMillionaire
     def questionfunc(question, questioncounter)
       system('clear')
       puts "Question #{questioncounter} is for #{$moneytree[questioncounter]}"
+      sleep(2)
       puts "\n" + question[0] + "?"
-      sleep(1)
+      sleep(4)
       print "A: ".colorize(:orange)
       puts question[1]
-      sleep(1)
+      sleep(2)
       print "B: ".colorize(:orange)
       puts question[2]
-      sleep(1)
+      sleep(2)
       print "C: ".colorize(:orange)
       puts question[3]
-      sleep(1)
+      sleep(2)
       print "D: ".colorize(:orange)
       puts question[4]
-      sleep(1)
+      sleep(2)
       puts "\n1: Lifeline"
       puts "2: Walk Away"
 
@@ -49,16 +50,24 @@ module PlayMillionaire
         answer = gets.chomp.capitalize
         
         if answer == question[5]
-          puts "Correct!"
+          puts "\nCorrect!"
+          puts "You've won #{moneytree[questioncounter]}"
+          puts
+          puts "\nPress ENTER for the next question"
+          gets
           break
         elsif answer == "1"
           puts "Lifeline"
         elsif answer == "2"
           puts "Walk Away"
           break
-        elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
-          puts "Incorrect"
           break
+          puts "Congratulations, you walk away with #{$moneytree[questioncounter-1]}"
+        elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
+          puts "\nIncorrect"
+          puts "\nSorry, you walk away with nothing"
+          puts "\nThanks for playing!"
+          exit
         else
           puts "Error: Invalid response"
         end

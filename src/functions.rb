@@ -28,6 +28,7 @@ module Functions
         firstline = false
       else
         puts "\n" + line
+        sleep(2)
       end
     end
   end
@@ -35,8 +36,7 @@ module Functions
   module_function
   def rules
     system('clear')
-    sleeplines([
-      "Ok. Here are the rules to play Who Wants to be a Millionaire!",
+    sleeplines(["Ok. Here are the rules to play Who Wants to be a Millionaire!",
       "15 questions stand between you and $1 million",
       "Each question is worth a greater amount of money than the last",
       "We start with the $100 question and work our way up all the way to $1 million",
@@ -49,8 +49,7 @@ module Functions
       "Ask the Audience will ask our virtual audience their opinion on the question and give you their results",
       "Phone a friend will phone your 'friend' and ask what they think",
       "50/50 will take away two wrong answers leaving only the right answer and one remaining wrong answer",
-      "Best of luck!"
-    ])
+      "Best of luck!"])
     puts "\nPress ENTER to play Who Wants to be a Millionaire!"
     gets
   end
@@ -63,7 +62,8 @@ module Functions
       "Let's start with your name"])
     print "\nENTER NAME: "
     $username = gets.chomp.capitalize
-    sleeplines(["\nWelcome to the Hot Seat #{$username}!",
+    system('clear')
+    sleeplines(["Welcome to the Hot Seat #{$username}!",
       "Now, would you like to hear the rules or get straight into playing for $1 million?",
       "1 FOR RULES | 2 TO PLAY MILLIONAIRE\n"])
     loop do
