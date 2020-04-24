@@ -64,7 +64,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 |                                                                              |
 |   Pay #{username}                                                              
 |                                                                              |
-|   The sum of #{prize}                                                          
+|   The sum of $#{prize}                                                          
 |                                                                              |
 |                                NON-NEGOTIABLE                                |
 |                                                                              |
