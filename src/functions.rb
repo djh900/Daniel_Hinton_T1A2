@@ -107,7 +107,11 @@ module Functions
   module_function
   def phoneafriend(question)
     if $phoneafriend == true
-      #pap results
+      puts "Ok, you're going to phone a friend. Dialling now..."
+      sleep(3)
+      puts "Hello?"
+      sleep(1)
+      puts question[10]
       $phoneafriend = false
     else
       puts "I'm sorry, you've already used Phone A Friend"

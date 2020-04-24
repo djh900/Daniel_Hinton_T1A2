@@ -63,7 +63,6 @@ module PlayMillionaire
         if answer == question[5]
           puts "\n#{answer} is Locked in..."
           sleep(2)
-          system('clear')
           puts EddieLines::eddieCorrectAnswer + "!"
           sleep(2)
           puts "\nYou've won #{$moneytree[questioncounter]}"
@@ -83,7 +82,6 @@ module PlayMillionaire
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
           puts "\n#{answer} is Locked in..."
           sleep(2)
-          system('clear')
           prize = nil
           if questioncounter < 5
             prize = "0"
@@ -97,6 +95,7 @@ module PlayMillionaire
           "Thanks for playing!"]
           Functions::sleeplines(array1)
           exit
+          end
         else
           puts "Error: Invalid response"
         end
