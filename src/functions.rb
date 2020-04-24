@@ -65,7 +65,7 @@ module Functions
     puts "Ok, let's play Who Wants to be a Millionaire!"
     sleep(2)
     system('clear')
-    questiontemplate
+    PlayMillionaire::PlayMillionaire.new
   end
 
   module_function

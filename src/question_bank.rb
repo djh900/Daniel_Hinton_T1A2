@@ -208,32 +208,31 @@ module QuestionBank
   q65 = ["Horowitz is the original surname of which American actor",
   "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D"]
 
-  questions100 = [q1, q2, q3, q4, q5]
-  questions200 = [q6, q7, q8, q9, q10]
-  questions300 = [q11, q12, q13, q14, q15]
-  questions500 = [q16, q17, q18, q19, q20]
-  questions1000 = [q21, q22, q23, q24, q25]
-  questions1500 = [q26, q27, q28, q29, q30]
-  questions2500 = [q31, q32, q33, q34, q35]
-  questions4k = [q36, q37, q38, q39, q40]
-  questions6k = [q41, q42, q43, q44, q45]
-  questions10k = [q46, q47, q48, q49, q50]
-  questions20k = [q51, q52, q53]
-  questions50k = [q54, q55, q56]
-  questions100k = [q57, q58, q59]
-  quesitons250k = [q60, q61, q62]
-  questions1million = [q63, q64, q65]
+  $questions100 = [q1, q2, q3, q4, q5]
+  $questions200 = [q6, q7, q8, q9, q10]
+  $questions300 = [q11, q12, q13, q14, q15]
+  $questions500 = [q16, q17, q18, q19, q20]
+  $questions1000 = [q21, q22, q23, q24, q25]
+  $questions1500 = [q26, q27, q28, q29, q30]
+  $questions2500 = [q31, q32, q33, q34, q35]
+  $questions4k = [q36, q37, q38, q39, q40]
+  $questions6k = [q41, q42, q43, q44, q45]
+  $questions10k = [q46, q47, q48, q49, q50]
+  $questions20k = [q51, q52, q53]
+  $questions50k = [q54, q55, q56]
+  $questions100k = [q57, q58, q59]
+  $questions250k = [q60, q61, q62]
+  $questions1million = [q63, q64, q65]
 
   module_function
   def questionstackgenerator
     questionstack = []
 
-    questions = [questions100, questions200, questions300, questions500,
-      questions1000, questions1500, questions2500, questions4k, questions6k,
-      questions 10k, questions20k, questions50k, questions100k, questions250k,
-      questions1million]
+    questionlist = [$questions100, $questions200, $questions300, $questions500,
+      $questions1000, $questions1500, $questions2500, $questions4k, $questions6k,
+      $questions10k, $questions20k, $questions50k, $questions100k, $questions250k, $questions1million]
 
-    for question in questions
+    for question in questionlist
       questionstack << question.sample
     end
 
