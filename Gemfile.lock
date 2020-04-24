@@ -2,12 +2,25 @@ GEM
   remote: https://rubygems.org/
   specs:
     colorize (0.8.1)
+    strings-ansi (0.1.0)
+    tty-cursor (0.7.1)
+    tty-progressbar (0.17.0)
+      strings-ansi (~> 0.1.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.7)
+      unicode-display_width (~> 1.6)
+    tty-screen (0.7.1)
+    tty-spinner (0.9.3)
+      tty-cursor (~> 0.7)
+    unicode-display_width (1.7.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   colorize (~> 0.8.1)
+  tty-progressbar (~> 0.17.0)
+  tty-spinner (~> 0.9.3)
 
 BUNDLED WITH
    2.1.2

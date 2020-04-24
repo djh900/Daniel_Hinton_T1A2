@@ -1,5 +1,7 @@
 require_relative "./playmillionaire.rb"
 
+require 'tty-spinner'
+
 module Functions
 
 # Function to avoid repeating puts "\n___" sleep(2)" for lines of text where needed
@@ -75,9 +77,10 @@ module_function
   def asktheaudience(question)
     if $asktheaudience == true
       puts "\nOk, audience, buzzers at the ready, vote now!"
-      sleep(1)
-      puts "....."
-      sleep(2)
+      spinner = TTY::Spinner.new(format: :pulse_2)
+      spinner.auto_spin
+      sleep(3)
+      spinner.stop
       puts "Results:"
       print "A: ".colorize(:blue)
       puts question[6].to_s + "%"
@@ -98,7 +101,10 @@ module_function
   def phoneafriend(question)
     if $phoneafriend == true
       puts "Ok, you're going to phone a friend. Dialling now..."
+      spinner = TTY::Spinner.new(format: :classic)
+      spinner.auto_spin
       sleep(3)
+      spinner.stop
       puts "Hello?"
       sleep(1)
       puts question[10]
@@ -113,9 +119,10 @@ module_function
   def fiftyfifty(question)
     if $fiftyfifty == true
       puts "Okay, 50/50. Computer, take away two wrong answers leaving the right answer and one remaining wrong answer"
-      sleep(2)
-      puts "....."
-      sleep(1)
+      spinner = TTY::Spinner.new(format: :dots)
+      spinner.auto_spin
+      sleep(3)
+      spinner.stop
       if question[5] == "A" || question[5] == "B"
         puts "The remaining answers are A and B"
       else
@@ -181,7 +188,7 @@ module_function
   end
 
   def moneytree(count)
-    moneytree = ["15   $1 MILLION".colorize(:blue),
+    moneytree = ["\n15   $1 MILLION".colorize(:blue),
       "14     $250,000",
       "13     $100,000",
       "12      $50,000",
