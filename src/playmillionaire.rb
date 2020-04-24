@@ -1,6 +1,7 @@
 require_relative './functions.rb'
 require_relative './questionbank.rb'
 require_relative './eddielines.rb'
+require_relative './asciiart.rb'
 
 require 'colorize'
 
@@ -11,6 +12,8 @@ module PlayMillionaire
 
     include QuestionBank
     include EddieLines
+    include AsciiArt
+
 
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
       5 => "$1,000", 6 => "$1,500", 7 => "$2,500", 8 => "$4,000", 9 => "$6,000",
@@ -61,9 +64,10 @@ module PlayMillionaire
         answer = gets.chomp.capitalize
 
         if answer == question[5]
+          millionwin(answer) if questioncounter == 15
           puts "\n#{answer} is Locked in..."
           sleep(2)
-          puts EddieLines::eddieCorrectAnswer + "!"
+          puts "\n" + EddieLines::eddieCorrectAnswer + "!"
           sleep(2)
           puts "\nYou've won #{$moneytree[questioncounter]}"
           sleep(2)
@@ -76,26 +80,34 @@ module PlayMillionaire
           Functions::lifelines(question)
         elsif answer == "2"
           puts "Walk Away"
-          puts "\nCongratulations, you walk away with #{$moneytree[questioncounter-1]}"
+          sleep(1)
+          system('clear')
+          prize = $moneytree[questioncounter-1]
+          puts "\nCongratulations, you walk away with #{prize}"
+          sleep(2)
+          username = $username
+          Functions::cheque(username, prize)
+          sleep(2)
           puts "\nThanks for playing Who Wants to be a Millionaire!"
           exit
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
           puts "\n#{answer} is Locked in..."
           sleep(2)
-          prize = nil
           if questioncounter < 5
             prize = "0"
           elsif questioncounter < 10
             prize = "1,000"
           else 
             prize = "10,000"
+          end
           array1 = ["I'm sorry, that's the wrong answer!",
           "The correct answer was #{question[5]}",
           "Sorry, you walk away with $#{prize}",
           "Thanks for playing!"]
           Functions::sleeplines(array1)
+          username = $username
+          Functions::cheque(username, prize) unless questioncounter < 5
           exit
-          end
         else
           puts "Error: Invalid response"
         end
