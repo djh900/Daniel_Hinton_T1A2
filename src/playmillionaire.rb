@@ -42,6 +42,8 @@ module PlayMillionaire
 
       # Question displayed on the screen
       puts "Question #{questioncounter} is for #{$moneytree[questioncounter]}"
+      sleep(1)
+      Functions::moneytree(questioncounter)
       sleep(2)
       puts "\n" + question[0] + "?"
       sleep(4)

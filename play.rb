@@ -7,4 +7,5 @@ asciiArt.loadscreen
 sleep(4)
 
 system('clear')
+
 Functions::playmillionaire

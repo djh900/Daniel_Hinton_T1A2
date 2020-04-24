@@ -179,4 +179,30 @@ module_function
     cheque($username, "$1 MILLION")
     puts "\nThanks for playing Who Wants to be a Millionare!"
   end
+
+  def moneytree(count)
+    moneytree = ["15   $1 MILLION".colorize(:blue),
+      "14     $250,000",
+      "13     $100,000",
+      "12      $50,000",
+      "11      $20,000",
+      "10      $10,000".colorize(:blue),
+      "9        $6,000",
+      "8        $4,000",
+      "7        $2,500",
+      "6        $1,500",
+      "5        $1,000".colorize(:blue),
+      "4          $500",
+      "3          $300",
+      "2          $200",
+      "1          $100"]
+
+    for value in moneytree
+      if value == moneytree[- count]
+        puts value.colorize(:red)
+      else
+        puts value
+      end
+    end
+  end
 end
