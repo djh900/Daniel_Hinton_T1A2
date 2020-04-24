@@ -55,10 +55,10 @@ module Functions
   end
 
   module_function
-  def playmillionaire1
+  def playmillionaire
     system('clear')
     sleeplines(["Welcome to Who Wants to be a Millionaire!",
-      "I'm your host, Eddie McGuire",
+      "I'm your host, Eddie McGuire!",
       "Let's start with your name"])
     print "\nENTER NAME: "
     $username = gets.chomp.capitalize
@@ -79,7 +79,7 @@ module Functions
       end
     end
     questionstack = QuestionBank::questionstackgenerator
-    playgame = PlayMillionaire::PlayMillionaire.new(questionstack, 1)
+    PlayMillionaire::PlayMillionaire.new(questionstack, 1)
   end
 
   module_function
@@ -105,11 +105,15 @@ module Functions
   module_function
   def fiftyfifty(question)
     if $fiftyfifty = true
+      puts "Okay, 50/50. Computer, take away two wrong answers leaving the right answer and one remaining wrong answer"
+      sleep(2)
+      puts "....."
+      sleep(1)
       case question[5]
       when "A" || "B"
-        puts "The remaining answers are A and B"
+        puts "\nThe remaining answers are A and B"
       when "C" || D
-        puts "The remaining answers are C and D"
+        puts "\nThe remaining answers are C and D"
       end
       $fiftyfifty = false
     else
@@ -120,9 +124,11 @@ module Functions
   module_function
   def lifelines(question)
     if $asktheaudience == false && $phoneafriend == false && $fiftyfifty == false
-      puts "I'm sorry, you're out of lifelines"
+      puts "\nI'm sorry, you're out of lifelines"
     else
-      puts "Okay, you're going to use a lifeline."
+      puts "\nOkay, you're going to use a lifeline."
+      sleep (1)
+      puts "\nThese are the lifelines you still have available:"
       puts "1. Ask the Audience" if $asktheaudience
       puts "2. Phone a Friend" if $phoneafriend
       puts "3. 50/50" if $fiftyfifty

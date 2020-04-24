@@ -10,6 +10,7 @@ module PlayMillionaire
   class PlayMillionaire
 
     include QuestionBank
+    include EddieLines
 
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
       5 => "$1,000", 6 => "$1,500", 7 => "$2,500", 8 => "$4,000", 9 => "$6,000",
@@ -56,15 +57,14 @@ module PlayMillionaire
         answer = gets.chomp.capitalize
 
         if answer == question[5]
-        puts "\n#{answer} is Locked in..."
-        sleep(2)
-        system('clear')
-          
-          sleep (1)
-          EddieLines::eddieCorrectAnswer.sample
+          puts "\n#{answer} is Locked in..."
+          sleep(2)
+          system('clear')
+          puts EddieLines::eddieCorrectAnswer + "!"
+          sleep(1)
           puts "\nYou've won #{$moneytree[questioncounter]}"
           sleep(1)
-          EddieLines::eddieQuips.sample
+          puts EddieLines::eddieQuips + "!"
           sleep(1)
           puts "\nPress ENTER for the next question"
           gets
@@ -77,11 +77,14 @@ module PlayMillionaire
           puts "Thanks for playing Who Wants to be a Millionaire!"
           exit
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
-          puts "\nIncorrect!"
+          puts "\n#{answer} is Locked in..."
           sleep(2)
-          puts "\nSorry, you walk away with nothing"
-          sleep(2)
-          puts "\nThanks for playing!"
+          system('clear')
+          array1 = ["I'm sorry, that's the wrong answer!",
+          "The correct answer was #{question[5]}",
+          "Sorry, you walk away with nothing",
+          "Thanks for playing!"]
+          Functions::sleeplines(array1)
           exit
         else
           puts "Error: Invalid response"

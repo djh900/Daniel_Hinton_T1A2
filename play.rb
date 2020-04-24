@@ -13,4 +13,4 @@ sleep(4)
 # Main Menu
 
 system('clear')
-Functions::playmillionaire1
+Functions::playmillionaire
