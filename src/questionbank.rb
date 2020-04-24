@@ -65,7 +65,7 @@ module QuestionBank
   q16 = ["Which of these is a type of gemstone",
   "Beryl", "Ethyl", "Myrtle", "Phyllis", "A", 45, 15, 32, 8]
 
-  q17 = ["Metal halide is the name for a type of what, commonly found in public spaces",
+  q17 = ["'Metal Halide' is the name for a type of what, commonly found in public spaces",
   "Garbage Bin", "Lamp", "Park Bench", "Fence", "B", 30, 49, 15, 6]
 
   q18 = ["Which of these sports has a marked area known as the 'key'",

@@ -17,6 +17,10 @@ module PlayMillionaire
       10 => "$10,000", 11 => "$20,000", 12 => "$50,000", 13 => "$100,000",
       14 => "$250,000", 15 => "$1 Million"}
 
+    $asktheaudience = true
+    $phoneafriend = true
+    $fiftyfifty = true
+
     def initialize(questionstack, questioncounter)
       $asktheaudience = true
       $phoneafriend = true
@@ -61,11 +65,11 @@ module PlayMillionaire
           sleep(2)
           system('clear')
           puts EddieLines::eddieCorrectAnswer + "!"
-          sleep(1)
+          sleep(2)
           puts "\nYou've won #{$moneytree[questioncounter]}"
-          sleep(1)
-          puts EddieLines::eddieQuips + "!"
-          sleep(1)
+          sleep(2)
+          puts "\n" + EddieLines::eddieQuips + "!"
+          sleep(2)
           puts "\nPress ENTER for the next question"
           gets
           break
@@ -73,16 +77,23 @@ module PlayMillionaire
           Functions::lifelines(question)
         elsif answer == "2"
           puts "Walk Away"
-          puts "Congratulations, you walk away with #{$moneytree[questioncounter-1]}"
-          puts "Thanks for playing Who Wants to be a Millionaire!"
+          puts "\nCongratulations, you walk away with #{$moneytree[questioncounter-1]}"
+          puts "\nThanks for playing Who Wants to be a Millionaire!"
           exit
         elsif answer == "A" || answer == "B" || answer == "C" || answer = "D"
           puts "\n#{answer} is Locked in..."
           sleep(2)
           system('clear')
+          prize = nil
+          if questioncounter < 5
+            prize = "0"
+          elsif questioncounter < 10
+            prize = "1,000"
+          else 
+            prize = "10,000"
           array1 = ["I'm sorry, that's the wrong answer!",
           "The correct answer was #{question[5]}",
-          "Sorry, you walk away with nothing",
+          "Sorry, you walk away with $#{prize}",
           "Thanks for playing!"]
           Functions::sleeplines(array1)
           exit

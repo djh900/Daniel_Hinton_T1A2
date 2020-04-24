@@ -58,8 +58,8 @@ module Functions
   def playmillionaire
     system('clear')
     sleeplines(["Welcome to Who Wants to be a Millionaire!",
-      "I'm your host, Eddie McGuire!",
-      "Let's start with your name"])
+      "I'm your host, Eddie McGuire!"])
+    puts "\nLet's start with your name"
     print "\nENTER NAME: "
     $username = gets.chomp.capitalize
     system('clear')
@@ -84,20 +84,20 @@ module Functions
 
   module_function
   def asktheaudience(question)
-    if $asktheaudience = true
+    if $asktheaudience == true
       puts "\nOk, audience, buzzers at the ready, vote now!"
       sleep(1)
       puts "....."
       sleep(2)
-      puts "\nResults:"
+      puts "Results:"
       print "A: ".colorize(:blue)
-      puts question[6] + "%"
+      puts question[6].to_s + "%"
       print "B: ".colorize(:blue)
-      puts question[7] + "%"
+      puts question[7].to_s + "%"
       print "C: ".colorize(:blue)
-      puts question[8] + "%"
+      puts question[8].to_s + "%"
       print "D: ".colorize(:blue)
-      puts question[9] + "%"
+      puts question[9].to_s + "%"
       $asktheaudience = false
     else
       puts "I'm sorry, you've already used Ask the Audience"
@@ -106,7 +106,7 @@ module Functions
 
   module_function
   def phoneafriend(question)
-    if $phoneafriend = true
+    if $phoneafriend == true
       #pap results
       $phoneafriend = false
     else
@@ -116,16 +116,16 @@ module Functions
 
   module_function
   def fiftyfifty(question)
-    if $fiftyfifty = true
+    if $fiftyfifty == true
       puts "Okay, 50/50. Computer, take away two wrong answers leaving the right answer and one remaining wrong answer"
       sleep(2)
       puts "....."
       sleep(1)
       case question[5]
       when "A" || "B"
-        puts "\nThe remaining answers are A and B"
+        puts "The remaining answers are A and B"
       when "C" || D
-        puts "\nThe remaining answers are C and D"
+        puts "The remaining answers are C and D"
       end
       $fiftyfifty = false
     else

@@ -26,8 +26,7 @@ module EddieLines
   def eddieCorrectAnswer
     ["That's right",
     "Correct",
-    "That's the right answer",
-    "Yes"].sample
+    "That's the right answer"].sample
   end
 
 end
