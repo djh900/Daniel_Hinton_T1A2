@@ -224,4 +224,24 @@ module QuestionBank
   quesitons250k = [q60, q61, q62]
   questions1million = [q63, q64, q65]
 
+  module_function
+  def questionstackgenerator
+    questionstack = []
+
+    questions = [questions100, questions200, questions300, questions500,
+      questions1000, questions1500, questions2500, questions4k, questions6k,
+      questions 10k, questions20k, questions50k, questions100k, questions250k,
+      questions1million]
+
+    for question in questions
+      questionstack << question.sample
+    end
+
+    return questionstack
+  end
+
+
+
+
+
 end

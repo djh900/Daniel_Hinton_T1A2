@@ -54,7 +54,18 @@ module Functions
   end
 
   module_function
+  def questiontemplate
+
+  end
+  
+  module_function
   def playmillionaire2
+    questionstack = QuestionBank::questionstackgenerator
+    system('clear')
+    puts "Ok, let's play Who Wants to be a Millionaire!"
+    sleep(2)
+    system('clear')
+    questiontemplate
   end
 
   module_function
