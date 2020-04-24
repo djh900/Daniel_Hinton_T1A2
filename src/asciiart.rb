@@ -1,5 +1,3 @@
-# require 'colorize'
-
 module AsciiArt
 
   class AsciiArt
