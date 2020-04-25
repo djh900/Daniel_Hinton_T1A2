@@ -95,7 +95,7 @@ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
         `                           `,
         `
          `
-           `."
+           `.".colorize(:blue)
     end
   end
 end
