@@ -29,8 +29,6 @@ You're now ready to go! type in `ruby play.rb` and get ready to play for $1 mill
 Ask the Audience, Phone a Friend, 50/50: This app contains all the lifelines you'd expect from the classic version of Who Wants to be a Millionaire
 ##### Virtual Host
 A virtual Eddie McGuire will guide you through the game, complete with quips pulled straight from the show.
-##### Easter Eggs
-There is an easter egg located in one of the \$100,000 questions, as well as if you get all 15 questions correct and win $1 million.
 
 ## Troubleshooting
 Make sure you have the latest version of Ruby installed. You can check this on your command line with the command `ruby -v`. The latest version is 2.7.0
