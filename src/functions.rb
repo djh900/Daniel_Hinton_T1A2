@@ -197,7 +197,7 @@ module_function
     asciiart = AsciiArt::AsciiArt.new
     asciiart.asciibaloons
     sleep (2)
-    cheque($username, "1 MILLION")
+    cheque($username, "$1 MILLION")
     sleep(2)
     puts "\nThanks for playing Who Wants to be a Millionare!"
     exit
