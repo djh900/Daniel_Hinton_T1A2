@@ -1,6 +1,4 @@
 # Who wants to be a Millionaire Terminal App
-Play now in your browser on repl.it! https://danielhintont1a2.djh900.repl.run/
-
 ![wwtbam_logo](./img/logo-large.jpg)
 ## Description
 15 Questions stand between you and $1 million. Let's play Who Wants to be a Millionaire!
