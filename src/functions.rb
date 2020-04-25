@@ -155,6 +155,7 @@ module_function
       puts "1. Ask the Audience" if $asktheaudience
       puts "2. Phone a Friend" if $phoneafriend
       puts "3. 50/50" if $fiftyfifty
+      puts "4. Return to question"
     end
 
     loop do
@@ -170,6 +171,8 @@ module_function
       when "3"
         fiftyfifty(question)
         break
+      when "4"
+        break
       else
         puts "I'm sorry, That's not a valid answer. Please enter a valid input"
       end
@@ -183,6 +186,11 @@ module_function
     asciiart.cheque($username, prize)
   end
 
+  module_function
+  def confetti
+    djdjd
+  end
+
   # Function is run if the user gets all 15 questions correct
   module_function
   def millionwin(answer)
@@ -192,7 +200,11 @@ module_function
     sleep(2)
     puts "\nYou've just won $1 MILLION!!! Congratulations!"
     sleep(2)
+    asciiart = AsciiArt::AsciiArt.new
+    asciiart.asciibaloons
+    sleep (2)
     cheque($username, "$1 MILLION")
+    sleep(2)
     puts "\nThanks for playing Who Wants to be a Millionare!"
   end
 
