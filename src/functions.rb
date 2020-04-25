@@ -79,15 +79,6 @@ module_function
       spinner.auto_spin
       sleep(3)
       spinner.stop
-      # puts "Results:"
-      # print "A: ".colorize(:blue)
-      # puts question[6].to_s + "%"
-      # print "B: ".colorize(:blue)
-      # puts question[7].to_s + "%"
-      # print "C: ".colorize(:blue)
-      # puts question[8].to_s + "%"
-      # print "D: ".colorize(:blue)
-      # puts question[9].to_s + "%"
       data = [
         {name: 'A', value: question[6]*100, color: :bright_yellow, fill: '*'},
         {name: 'B', value: question[7]*100, color: :bright_green, fill: 'x'},
