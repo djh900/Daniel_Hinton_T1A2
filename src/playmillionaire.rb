@@ -61,15 +61,15 @@ module PlayMillionaire
 
       # The user gives their answer here
       loop do
-        print "\nRESPONSE: "
+        print "\nANSWER: "
         answer = gets.chomp.capitalize
 
-        if questioncounter >= 8
+        if questioncounter >= 8 && (answer == "A" || answer == "B" || answer == "C" || answer == "D")
           answer = Functions::answerchecker(answer)
         end
 
         if answer == question[5] # Correct answer
-          millionwin(answer) if questioncounter == 15
+          Functions::millionwin(answer) if questioncounter == 15
           puts "\n#{answer} is Locked in..."
           sleep(2)
           puts "\n" + EddieLines::eddieCorrectAnswer + "!"
