@@ -29,5 +29,3 @@ If you do not have RVM installed, you can install it with the command `\curl -sS
 Ask the Audience, Phone a Friend, 50/50: This app contains all the lifelines you'd expect from the classic version of Who Wants to be a Millionaire
 ##### Virtual Host
 A virtual Eddie McGuire will guide you through the game, complete with quips pulled straight from the show.
-##### Easter Eggs
-There is an easter egg located in one of the \$100,000 questions, as well as if you get all 15 questions correct and win $1 million.
