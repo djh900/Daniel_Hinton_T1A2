@@ -20,4 +20,13 @@ The Trello board now looks like this:
 Until tomorrow.
 
 ### Day 2
-##### Saturday, April 25, 3:00pm
+##### Saturday, April 25, 7:00pm
+Well, the app is finished and has been extensively manually tested. Everything seems to be working as expected. Hard work but it has paid off. The Trello board now looks like this:
+
+![trello board 3](../img/trello-board-3.png)
+
+The tasks to do now are:
+* Develop some unit tests to test the functions in the src/functions.rb file
+* Double the amount of questions in the question bank to 130
+* Try and implement a timer for each question. Can it be done? I will find out
+
