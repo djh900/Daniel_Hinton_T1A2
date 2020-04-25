@@ -234,4 +234,20 @@ module_function
       end
     end
   end
+
+  def answerchecker(answer)
+    loop do 
+      puts "Is that your final answer? (Y/N)"
+      finalanswer = gets.chomp.capitalize
+      case finalanswer
+      when "Y"
+        return answer
+      when "N"
+        print "RESPONSE: "
+        answer = gets.chomp.capitalize
+      else
+        puts "Sorry, please type Y or N"
+      end
+    end
+  end
 end

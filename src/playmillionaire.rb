@@ -64,6 +64,10 @@ module PlayMillionaire
         print "\nRESPONSE: "
         answer = gets.chomp.capitalize
 
+        if questioncounter >= 8
+          answer = Functions::answerchecker(answer)
+        end
+
         if answer == question[5] # Correct answer
           millionwin(answer) if questioncounter == 15
           puts "\n#{answer} is Locked in..."
