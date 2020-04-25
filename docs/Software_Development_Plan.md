@@ -48,15 +48,25 @@ The virtual eddie is an array of 'quips', one of which is selected randomly afte
 ![eddie_mcguire](../img/eddie-mcguire.png)
 
 ### User Experience
-When the user loads the game, they are presented with a menu containing the following options:
-* Play Millionaire!
-* Exit
+When the user loads the game, they are introduced to the host and prompted to enter their name. They are then given the option of viewing the game rules. After this a new game of Millionaire starts.
 
-The 'Play Millionaire!' option takes the user to a new game of Who Wants to be a Millionaire. They will be prompted by the virtual host for their name, and then go on to be given the game's instructions. Then the user will be given the first question. They can answer with either 'A', 'B', 'C' or 'D' if they think they know the answer, or select '1' for Ask the Audience, '2' for Phone a Friend, '3' for 50/50, or '4' to walk away.
+The user is presented with the first question. They can answer with either 'A', 'B', 'C' or 'D' if they think they know the answer, or select '1' to use a lifeline or '2' to walk away.
 
-The .chomp method will remove whitespaces and .capitalize method will correct the formatting of any lowercase answers. If the user does not provide a valid input, an error message of "Error: You did not provide a valid input" will be displayed and the user able to re-enter the input.
+If they select A, B, C or D, they will be told if their answer is correct or not. If the question is worth $4,000 or more, they will be asked it that is their final answer and prompted to enter Y or N. If the answer is correct, the user moves on to the next question. If not, they leave the game with the amount of money equivelant to the last safe level they passed.
 
-The 'Exit' option on the main menu exits the user from the application.
+If the user selects '1', they will be asked which lifeline they want to use; ask the audience, phone a friend or 50/50.
+
+Ask the audience presents the results of polling the virtual studio audience in the form of a pie chart using the gem 'tty-pie'.
+
+Phone a friend phones a virtual friend, of which there are eight possible responses, ranging from 100% certainty to no idea.
+
+50/50 Tells the user that two of the question's options are incorrect.
+
+If the user selects '4', they will walk away with the amount of money equivelant to the last question they got correct and leave the game.
+
+When the user leaves the game, they will be presented with a virtual ascci art cheque, showing their name and the amount of money they won (unless they did not win any money)
+
+The .chomp method on user inputs will remove whitespaces and the .capitalize method will correct the formatting of any lowercase answers. If the user does not provide a valid input, an error message of "Error: You did not provide a valid input" will be displayed and the user able to re-enter the correct input.
 
 ### Control Flow
 
