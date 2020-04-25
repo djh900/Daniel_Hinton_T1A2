@@ -95,6 +95,7 @@ module_function
         {name: 'D', value: question[9]*100, color: :bright_cyan, fill: '+'}
       ]
       pie_chart = TTY::Pie.new(data: data, radius: 5)
+      puts "Results:"
       puts pie_chart
       sleep(1)
       $asktheaudience = false
@@ -107,7 +108,7 @@ module_function
   module_function
   def phoneafriend(question)
     if $phoneafriend == true
-      puts "Ok, you're going to phone a friend. Dialling now..."
+      puts "\nOk, you're going to phone a friend. Dialling now..."
       spinner = TTY::Spinner.new(format: :classic)
       spinner.auto_spin
       sleep(3)
@@ -118,7 +119,7 @@ module_function
       sleep(1)
       $phoneafriend = false
     else
-      puts "I'm sorry, you've already used Phone A Friend"
+      puts "\nI'm sorry, you've already used Phone A Friend"
     end
   end
 
@@ -126,20 +127,20 @@ module_function
   module_function
   def fiftyfifty(question)
     if $fiftyfifty == true
-      puts "Okay, 50/50. Computer, take away two wrong answers leaving the right answer and one remaining wrong answer"
+      puts "\nOkay, 50/50. Computer, take away two wrong answers leaving the right answer and one remaining wrong answer"
       spinner = TTY::Spinner.new(format: :dots)
       spinner.auto_spin
       sleep(3)
       spinner.stop
       if question[5] == "A" || question[5] == "B"
-        puts "The remaining answers are A and B"
+        puts "\nThe remaining answers are A and B"
       else
-        puts "The remaining answers are C and D"
+        puts "\nThe remaining answers are C and D"
       end
       sleep(1)
       $fiftyfifty = false
     else
-      puts "I'm sorry, you've already used 50/50"
+      puts "\nI'm sorry, you've already used 50/50"
     end
   end
 
@@ -148,6 +149,7 @@ module_function
   def lifelines(question)
     if $asktheaudience == false && $phoneafriend == false && $fiftyfifty == false
       puts "\nI'm sorry, you're out of lifelines"
+      return nil
     else
       puts "\nOkay, you're going to use a lifeline."
       sleep (1)
@@ -174,7 +176,7 @@ module_function
       when "4"
         break
       else
-        puts "I'm sorry, That's not a valid answer. Please enter a valid input"
+        puts "\nI'm sorry, That's not a valid answer. Please enter a valid input"
       end
     end
   end
@@ -196,6 +198,7 @@ module_function
   def millionwin(answer)
     puts "\n#{answer} is Locked in..."
     sleep(2)
+    system('clear')
     puts "\nYou had $250,000..."
     sleep(2)
     puts "\nYou've just won $1 MILLION!!! Congratulations!"
@@ -203,7 +206,7 @@ module_function
     asciiart = AsciiArt::AsciiArt.new
     asciiart.asciibaloons
     sleep (2)
-    cheque($username, "$1 MILLION")
+    cheque($username, "1 MILLION")
     sleep(2)
     puts "\nThanks for playing Who Wants to be a Millionare!"
     exit
@@ -237,7 +240,7 @@ module_function
 
   def answerchecker(answer)
     loop do 
-      puts "Is that your final answer? (Y/N)"
+      puts "\nIs that your final answer? (Y/N)"
       finalanswer = gets.chomp.capitalize
       case finalanswer
       when "Y"
