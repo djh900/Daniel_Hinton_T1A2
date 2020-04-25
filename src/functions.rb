@@ -206,6 +206,7 @@ module_function
     cheque($username, "$1 MILLION")
     sleep(2)
     puts "\nThanks for playing Who Wants to be a Millionare!"
+    exit
   end
 
   def moneytree(count)
