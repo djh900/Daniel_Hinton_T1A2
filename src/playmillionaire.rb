@@ -84,11 +84,10 @@ module PlayMillionaire
         elsif answer == "1" # User wants to use a lifeline
           Functions::lifelines(question)
         elsif answer == "2" # User opts to walk away
-          puts "Walk Away"
+          puts "\nWalk Away"
           sleep(1)
-          system('clear')
           prize = $moneytree[questioncounter-1]
-          puts "Congratulations, you walk away with #{prize}!"
+          puts "\nCongratulations, you walk away with #{prize}!"
           sleep(2)
           username = $username
           Functions::cheque(username, prize)
