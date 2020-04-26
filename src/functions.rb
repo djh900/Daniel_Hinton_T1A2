@@ -179,11 +179,6 @@ module_function
     asciiart.cheque($username, prize)
   end
 
-  module_function
-  def confetti
-    djdjd
-  end
-
   # Function is run if the user gets all 15 questions correct
   module_function
   def millionwin(answer)
