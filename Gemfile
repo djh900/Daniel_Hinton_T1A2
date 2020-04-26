@@ -11,5 +11,3 @@ gem "colorize", "~> 0.8.1"
 gem "tty-spinner", "~> 0.9.3"
 
 gem "tty-pie", "~> 0.3.0"
-
-gem "test-unit", "~> 3.3"
