@@ -281,7 +281,7 @@ module QuestionBank
   r8 = ["What is a term for someone who speaks out about injustices or illegal activities at their own place of work",
   "Foghorner", "Whistleblower", "Bassthumper", "Cymbalcrasher", "B", 17, 79, 3, 1, phoneafriend1("B")]
 
-  r9 = ["A 1985 hit song by Talking Heads is what 'to Nowhere",
+  r9 = ["A 1985 hit song by Talking Heads is what 'to Nowhere'",
   "Road", "Street", "Highway", "Cul-de-sac", "A", 67, 17, 15, 1, phoneafriend2("A")]
 
   r10 = ["Hazel coloured eyes typically appear as a combination of which of these",
