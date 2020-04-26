@@ -1,5 +1,6 @@
 ## Implementation plan
 See the plan in more detail at https://trello.com/b/57GHMngp/who-wants-to-be-a-millionaire-terminal-app
+The deadline for all features listed here is Sunday, 26 April 2020
 * Generate questions
 * Generate ascii art
   - Who wants to be a millionaire logo
