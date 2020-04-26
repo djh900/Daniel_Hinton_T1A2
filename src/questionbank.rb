@@ -257,7 +257,7 @@ module QuestionBank
   q65 = ["Horowitz is the original surname of which American actor",
   "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D", 38, 17, 27, 18, phoneafriend7]
 
-  r1 = ["A coastal town in eastern Victoria is 'Lakes' what".
+  r1 = ["A coastal town in eastern Victoria is 'Lakes' what",
   "Entrance", "Exit", "Hallway", "Foyer", "B", 9, 88, 2, 1, phoneafriend1("B")]
 
   r2 = ["What is the term for a pilot who flies at the rear and to the side of a formation leader",
@@ -273,7 +273,7 @@ module QuestionBank
   "Coffs", "Sneeze", "Snoores", "Blinks", "A", 96, 1, 1, 2, phoneafriend1("A")]
 
   r6 = ["Meaning to exaggerate something is the common expression 'draw a what bow",
-  "Long", "Cross", "Short", "Fast", "A" 12, 78, 3, 7, phoneafriend2("A")]
+  "Long", "Cross", "Short", "Fast", "A", 12, 78, 3, 7, phoneafriend2("A")]
 
   r7 = ["North America's five great lakes are Huron, Ontario, Michigan, Erie and what",
   "Superior", "Inferior", "Awesome", "Woeful", "A", 93, 4, 1, 2, phoneafriend1("A")]
@@ -338,13 +338,13 @@ module QuestionBank
   r27 = ["Which of these is an alternative name for a 'scabbard'",
   "Foil", "Pommel", "Hilt", "Sheath", "D", 19, 24, 8, 49, phoneafriend3("D")]
 
-  r28 = ["The capital city of the West Indian republic of Haiti is Port-au-what"
+  r28 = ["The capital city of the West Indian republic of Haiti is Port-au-what",
   "King", "Queen", "Prince", "Princess", "C", 22, 19, 46, 13, phoneafriend5("C")]
 
   r29 = ["In filmmaking, what is the term for the specialized operator of a wheeled cart used to create tracking shots",
   "Runner", "Dolly grip", "Foley artist", "Gaffer", "B", 29, 39, 8, 24, phoneafriend5("B")]
 
-  r30 = ["The southernmost point of continental U.S.A. and part of the Florida Keys is the island of 'Key' what"
+  r30 = ["The southernmost point of continental U.S.A. and part of the Florida Keys is the island of 'Key' what",
   "North", "South", "East", "West", "D", 18, 13, 19, 50, phoneafriend3("D")]
 
   r31 = ["Which of these places in Queensland is southernmost",
@@ -356,10 +356,10 @@ module QuestionBank
   r33 = ["Perino is a snack-sized Australian variety of which of these",
   "Carrot", "Banana", "Tomato", "Pear", "C", 13, 29, 38, 20, phoneafriend4("C")]
 
-  r34 = ["In 1884, Michael Marks and Thomas Spencer founded what is now a famous British what"
+  r34 = ["In 1884, Michael Marks and Thomas Spencer founded what is now a famous British what",
   "Confectionery", "Millinery", "Department store", "Brewery", "C", 9, 26, 48, 27, phoneafriend2("C")]
 
-  r35 = ["In surfing, the term 'rocker' refers to a surfboard's what"
+  r35 = ["In surfing, the term 'rocker' refers to a surfboard's what",
   "Curved underside", "Tail fins", "Upper deck", "Rider", "A", 29, 44, 19, 8, phoneafriend6("B")]
 
   r36 = ["Which of these fields derives its name from the Greek words for 'earth' and 'write'",
@@ -374,7 +374,7 @@ module QuestionBank
   r39 = ["Under official FIFA rules, a soccer team can have a maximum of how many players on the field",
   "10", "11", "12", "13", "B", 26, 35, 27, 12, phoneafriend3("B")]
 
-  r40 = ["In which year did Ellen DeGeneres' daytime talk show first go to air"
+  r40 = ["In which year did Ellen DeGeneres' daytime talk show first go to air",
   "1995", "2000", "2003", "2009", "C", 27, 18, 43, 12, phoneafriend4("C")]
 
   r41 = ["The famous five-star hotel Claridge's was established in 1812 in which city",
@@ -386,10 +386,10 @@ module QuestionBank
   r43 = ["Used as the motto for Harvard University, what is the meaning of the latin word 'Veritas'",
   "Strength", "Unity", "Truth", "Freedom", "C", 22, 17, 26, 35, phoneafriend5("C")]
 
-  r44 = ["Which of these phrases is an example of 'consonance'"
+  r44 = ["Which of these phrases is an example of 'consonance'",
   "Crash bang", "Pitter patter", "Loud knock", "Big thud", "B", 27, 39, 17, 17, phoneafriend6("B")]
   
-  r45 = ["Bay leaf is an aromatic herb otherwise known as a what 'leaf'"
+  r45 = ["Bay leaf is an aromatic herb otherwise known as a what 'leaf'",
   "Oak", "Willow", "Laurel", "Pine", "C", 19, 28, 35, 18, phoneafriend4("C")]
 
   r46 = ["Which of these Australian films was adapted into a U.S. TV crime drama starring Ellen Barkin",
@@ -401,11 +401,11 @@ module QuestionBank
   r48 = ["The 'Sea of Islands', 'Sea of Waves' and 'Ocean of Storms' are all regions of which of these",
   "The Caribbean", "The Arctic Circle", "Antarctica", "The Moon", "D", 39, 27, 9, 25, phoneafriend7]
 
-  r49 = ["The word 'sushi' is derived from ancient Japanese meaning what"
+  r49 = ["The word 'sushi' is derived from ancient Japanese meaning what",
   "Sweet", "Sour", "Salty", "Bitter", "B", 18, 22, 39, 21, phoneafriend8]
 
-  r50 = ["Which of these is closest in meaning to the word 'adroit'"
-  "Boring", "Harsh", "Skilful", "Extended", "C" 17, 27, 11, 45, phoneafriend6("D")]
+  r50 = ["Which of these is closest in meaning to the word 'adroit'",
+  "Boring", "Harsh", "Skilful", "Extended", "C", 17, 27, 11, 45, phoneafriend6("D")]
 
   r51 = ["When Scott Morrison first became prime minister in 2018, how many former Australian prime ministers were still living",
   "5", "6", "7", "8", "C", 22, 35, 27, 16, phoneafriend6("C")]
@@ -443,13 +443,13 @@ module QuestionBank
   r62 = ["What is the capital of Greenland",
   "Nuuk", "Attu", "Kolding", "Herning", "A", 28, 26, 27, 19, phoneafriend7]
 
-  r63 = ["Which insect shorted out an early supercomputer and inspired the term 'computer bug'"
+  r63 = ["Which insect shorted out an early supercomputer and inspired the term 'computer bug'",
   "Moth", "Roach", "Fly", "Beetle", "A", 31, 17, 40, 12, phoneafriend6("A")]
 
   r64 = ["In the children's book series, where is Paddington Bear originally from",
   "India", "Peru", "Canada", "Iceland", "B", 25, 29, 29, 21, phoneafriend5("B")]
 
-  r65 = ["Who is credited with inventing the first mass-produced helicopter"
+  r65 = ["Who is credited with inventing the first mass-produced helicopter",
   "Igor Sikorsky", "Elmer Sperry", "Ferdinand von Zeppelin", "Gottlieb Daimler", "A", 21, 17, 35, 27, phoneafriend8]
 
 
