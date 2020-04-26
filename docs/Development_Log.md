@@ -30,3 +30,10 @@ The tasks to do now are:
 * Double the amount of questions in the question bank to 130
 * Try and implement a timer for each question. Can it be done? I will find out
 
+### Day 3
+##### Sunday, April 26, 4:00pm
+The project is pretty much complete. Time to put on a few episodes of the show and add some more questions to the question bank, and write a powerpoint showing the application off for the presentation. Other than that we're good.
+
+There is one marking criteria I will have to clear up as it makes zero sense to me: **Utilises** operating system or IDE features which facilitate the execution of the application. I hope that I have done that, even though I don't know what it means. Will clear up tomorrow.
+
+This process was frustrating. Writing the app was very fun. But the marking criteria was too restrictive and demanding. I don't expect to go into a job and be presented with criteria like that when writing a project. I expect more freedom, while still adhering to coding standards like file structures.
