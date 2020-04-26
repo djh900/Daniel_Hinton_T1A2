@@ -257,23 +257,219 @@ module QuestionBank
   q65 = ["Horowitz is the original surname of which American actor",
   "Matt Damon", "Johnny Depp", "Julia Roberts", "Winona Ryder", "D", 38, 17, 27, 18, phoneafriend7]
 
+  r1 = ["A coastal town in eastern Victoria is 'Lakes' what".
+  "Entrance", "Exit", "Hallway", "Foyer", "B", 9, 88, 2, 1, phoneafriend1("B")]
+
+  r2 = ["What is the term for a pilot who flies at the rear and to the side of a formation leader",
+  "Taildude", "Wingman", "Flyguy", "Propellerfeller", "B", 1, 96, 1, 2, phoneafriend1("B")]
+
+  r3 = ["In the 2019 superhero movie of the same name, Brie Larson plays 'Captain' who",
+  "Marvel", "Sensational", "Amazing", "Wowee", "A", 91, 3, 5, 1, phoneafriend1("A")]
+
+  r4 = ["A former Australian depute prime minister is Wayne who",
+  "Hawk", "Swan", "Heron", "Eagle", "B", 7, 89, 1, 3, phoneafriend1("B")]
+
+  r5 = ["A coastal town in New South Wales is what 'Harbour'",
+  "Coffs", "Sneeze", "Snoores", "Blinks", "A", 96, 1, 1, 2, phoneafriend1("A")]
+
+  r6 = ["Meaning to exaggerate something is the common expression 'draw a what bow",
+  "Long", "Cross", "Short", "Fast", "A" 12, 78, 3, 7, phoneafriend2("A")]
+
+  r7 = ["North America's five great lakes are Huron, Ontario, Michigan, Erie and what",
+  "Superior", "Inferior", "Awesome", "Woeful", "A", 93, 4, 1, 2, phoneafriend1("A")]
+
+  r8 = ["What is a term for someone who speaks out about injustices or illegal activities at their own place of work",
+  "Foghorner", "Whistleblower", "Bassthumper", "Cymbalcrasher", "B", 17, 79, 3, 1, phoneafriend1("B")]
+
+  r9 = ["A 1985 hit song by Talking Heads is what 'to Nowhere",
+  "Road", "Street", "Highway", "Cul-de-sac", "A", 67, 17, 15, 1, phoneafriend2("A")]
+
+  r10 = ["Hazel coloured eyes typically appear as a combination of which of these",
+  "Blue & white", "Black & grey", "Brown & green", "Bloodshot & navy", "C", 19, 8, 71, 2, phoneafriend2("C")]
+
+  r11 = ["Which of these is the name of a Scottish national hero, famous for his resistance to the English rule in the 14th Century",
+  "John the Warren", "Robert the Bruce", "David the Angus", "James the Kirk", "B", 27, 55, 8, 10, phoneafriend3("B")]
+
+  r12 = ["Which of these pasta sauces traditionally uses egg as an ingredient",
+  "Amatriciana", "Arrabiata", "Pesto", "Carbonara", "D", 17, 22, 47, 4, phoneafriend3("D")]
+
+  r13 = ["Which of these is the correct spelling for a type of espresso coffee with frothed milk",
+  "Cappucino", "Cappaccino", "Cappuccino", "Cappuchino", "C", 29, 11, 47, 13, phoneafriend3("C")]
+
+  r14 = ["Which of these is the title of a bestselling novel by Michael Connelly",
+  "The Buick Banker", "The Lincoln Lawyer", "The Cadillac Conman", "The Dodgy Driver", "B", 17, 77, 4, 2, phoneafriend2("B")]
+
+  r15 = ["Meaning to question if something is worth the effort is the expression 'is the juice worth the' what",
+  "Wait", "Price", "Squeeze", "Calories", "C", 11, 17, 70, 2, phoneafriend1("C")]
+
+  r16 = ["A famous New York City performance venue is what 'City Music Hall'",
+  "Radio", "Stereo", "HiFi", "Speaker", "A", 93, 4, 1, 2, phoneafriend1("A")]
+
+  r17 = ["Which of these appears on the cover artwork of Pink Floyd's 1979 album 'The Wall'",
+  "Ladder", "Bricks", "Spray can", "Barbed wire", "B", 9, 83, 2, 6, phoneafriend3("B")]
+
+  r18 = ["The 'radius' and the 'ulna' are both bones in which part of the body",
+  "Leg", "Arm", "Foot", "Hip", "B", 27, 56, 6, 11, phoneafriend2("B")]
+
+  r19 = ["Which of these is not a city in France",
+  "Dijon", "Geneva", "Toulouse", "Marseille", "B", 17, 71, 8, 4, phoneafriend2("B")]
+
+  r20 = ["100 kilometres per hour is equal to approximately how many miles per hour",
+  "40", "50", "60", "70", "D", 12, 29, 43, 16, phoneafriend3("D")]
+
+  r21 = ["What sitcom theme begins with the lyrics 'Whatever happened to predictability? The milkman, the paperboy, evening TV",
+  "Family Matters", "The Golden Girls", "Full House", "Cheers", "C", 28, 9, 49, 14, phoneafriend4("C")]
+
+  r22 = ["An audio-visual product first developed in the 1950s, 'VCR' stands for 'video what recorder'",
+  "Content", "Cartridge", "Cassette", "Carousel", "C", 12, 22, 64, 2, phoneafriend2("C")]
+
+  r23 = ["A 1969 novel by John Fowles is 'The French Lieutenant's' what",
+  "Mother", "Sister", "Woman", "Aunty", "C", 17, 19, 58, 6, phoneafriend2("C")]
+
+  r24 = ["Which of these Japanese condiments is most commonly served as a thick paste",
+  "Mirin", "Soy sauce", "Ponzu", "Wasabi", "D", 13, 9, 12, 66, phoneafriend3("D")]
+
+  r25 = ["Typically consisting of a short-sleeved jacket is the casual what 'suit'",
+  "Lounge", "Safari", "Dinner", "Wet", "B", 29, 42, 23, 6, phoneafriend3("B")]
+
+  r26 = ["The leaves of the salad vegetable radicchio are white and what",
+  "Purple", "Green", "Blue", "Yellow", "A", 38, 35, 4, 23, phoneafriend4("A")]
+
+  r27 = ["Which of these is an alternative name for a 'scabbard'",
+  "Foil", "Pommel", "Hilt", "Sheath", "D", 19, 24, 8, 49, phoneafriend3("D")]
+
+  r28 = ["The capital city of the West Indian republic of Haiti is Port-au-what"
+  "King", "Queen", "Prince", "Princess", "C", 22, 19, 46, 13, phoneafriend5("C")]
+
+  r29 = ["In filmmaking, what is the term for the specialized operator of a wheeled cart used to create tracking shots",
+  "Runner", "Dolly grip", "Foley artist", "Gaffer", "B", 29, 39, 8, 24, phoneafriend5("B")]
+
+  r30 = ["The southernmost point of continental U.S.A. and part of the Florida Keys is the island of 'Key' what"
+  "North", "South", "East", "West", "D", 18, 13, 19, 50, phoneafriend3("D")]
+
+  r31 = ["Which of these places in Queensland is southernmost",
+  "Townsville", "Mackay", "Cairns", "Rockhampton", "D", 38, 12, 9, 41, phoneafriend4("D")]
+
+  r32 = ["Originating in France in the late 1980s, which of these is a style of urban gymnastics similar to free running",
+  "CrossFit", "Parkour", "Rappeling", "Triathlon", "B", 17, 65, 13, 5, phoneafriend2("B")]
+
+  r33 = ["Perino is a snack-sized Australian variety of which of these",
+  "Carrot", "Banana", "Tomato", "Pear", "C", 13, 29, 38, 20, phoneafriend4("C")]
+
+  r34 = ["In 1884, Michael Marks and Thomas Spencer founded what is now a famous British what"
+  "Confectionery", "Millinery", "Department store", "Brewery", "C", 9, 26, 48, 27, phoneafriend2("C")]
+
+  r35 = ["In surfing, the term 'rocker' refers to a surfboard's what"
+  "Curved underside", "Tail fins", "Upper deck", "Rider", "A", 29, 44, 19, 8, phoneafriend6("B")]
+
+  r36 = ["Which of these fields derives its name from the Greek words for 'earth' and 'write'",
+  "Geology", "Geography", "Geophysics", "Geometry", "B", 22, 39, 24, 15, phoneafriend2("B")]
+
+  r37 = ["Which luxury carmaker unveiled its first SUV, the 'Cullinan' in 2018",
+  "Bentley", "Ferrari", "Porsche", "Rolls-Royce", "D", 23, 19, 28, 30, phoneafriend5("C")]
+
+  r38 = ["Born in France in 1963, Henri Leconte is best known for his career as which of these",
+  "Chef", "Tennis player", "Racing driver", "Politician", "B", 17, 49, 12, 22, phoneafriend3("B")]
+
+  r39 = ["Under official FIFA rules, a soccer team can have a maximum of how many players on the field",
+  "10", "11", "12", "13", "B", 26, 35, 27, 12, phoneafriend3("B")]
+
+  r40 = ["In which year did Ellen DeGeneres' daytime talk show first go to air"
+  "1995", "2000", "2003", "2009", "C", 27, 18, 43, 12, phoneafriend4("C")]
+
+  r41 = ["The famous five-star hotel Claridge's was established in 1812 in which city",
+  "Chicago", "Los Angeles", "London", "Paris", "C", 18, 14, 39, 29, phoneafriend5("C")]
+
+  r42 = ["The theme of whose TV show was based on an arrangement of Tchaikovsky's 'Symphony no 5'",
+  "Paul Hogan", "Don Lane", "Graham Kennedy", "Bert Newton", "A", 49, 16, 28, 7, phoneafriend4("A")]
+
+  r43 = ["Used as the motto for Harvard University, what is the meaning of the latin word 'Veritas'",
+  "Strength", "Unity", "Truth", "Freedom", "C", 22, 17, 26, 35, phoneafriend5("C")]
+
+  r44 = ["Which of these phrases is an example of 'consonance'"
+  "Crash bang", "Pitter patter", "Loud knock", "Big thud", "B", 27, 39, 17, 17, phoneafriend6("B")]
+  
+  r45 = ["Bay leaf is an aromatic herb otherwise known as a what 'leaf'"
+  "Oak", "Willow", "Laurel", "Pine", "C", 19, 28, 35, 18, phoneafriend4("C")]
+
+  r46 = ["Which of these Australian films was adapted into a U.S. TV crime drama starring Ellen Barkin",
+  "Animal Kingdom", "Snowtown", "Chopper", "The Boys", "A", 31, 25, 32, 12, phoneafriend6("A")]
+
+  r47 = ["Redmond, Washington is home to the corporate headquarters of which of these companies",
+  "Apple", "Google", "Microsoft", "Dell", "C", 27, 19, 28, 26, phoneafriend5("C")]
+
+  r48 = ["The 'Sea of Islands', 'Sea of Waves' and 'Ocean of Storms' are all regions of which of these",
+  "The Caribbean", "The Arctic Circle", "Antarctica", "The Moon", "D", 39, 27, 9, 25, phoneafriend7]
+
+  r49 = ["The word 'sushi' is derived from ancient Japanese meaning what"
+  "Sweet", "Sour", "Salty", "Bitter", "B", 18, 22, 39, 21, phoneafriend8]
+
+  r50 = ["Which of these is closest in meaning to the word 'adroit'"
+  "Boring", "Harsh", "Skilful", "Extended", "C" 17, 27, 11, 45, phoneafriend6("D")]
+
+  r51 = ["When Scott Morrison first became prime minister in 2018, how many former Australian prime ministers were still living",
+  "5", "6", "7", "8", "C", 22, 35, 27, 16, phoneafriend6("C")]
+
+  r52 = ["Other than France, which of these countries has a coastline on the Bay of Biscay",
+  "Italy", "Spain", "Netherlands", "Belgium", "B", 27, 18, 38, 17, phoneafriend4("B")]
+
+  r53 = ["Located off the coast of Spain, Majorca is part of which island group",
+  "Balearic", "Canary", "Hebrides", "Aegean", "A", 37, 19, 28, 16, phoneafriend5("A")]
+
+  r54 = ["The Australian Jackaroos are the national team in which sport",
+  "Soccer", "Lawn Bowls", "Hockey", "Volleyball", "B", 7, 69, 11, 13, phoneafriend3("B")]
+
+  r55 = ["After accusations of ball tampering, a 2006 test cricket match was forfeited between England and which country",
+  "Australia", "Pakistan", "South Africa", "New Zealand", "B", 29, 47, 19, 5, phoneafriend2("B")]
+
+  r56 = ["Where on the body would a 'peruke' normally be worn",
+  "Head", "Hand", "Foot", "Waist", "A"]
+
+  r57 = ["Who was the first Australian winner of the Miss Universe beauty pageant",
+  "Kerry Anne Wells", "Belinda Green", "Penelope Plummer", "Jennifer Hawkins", "A", 27, 19, 18, 36, phoneafriend6("D")]
+
+  r58 = ["Completed in 1086, the 'Domesday Book' was commissioned by which King of England",
+  "Alfred the Great", "Edward the Confessor", "Ethelred the Unready", "William the Conqueror", "D", 27, 18, 9, 46, phoneafriend4("D")]
+
+  r59 = ["Australian author and journalist Richard Neville famously co-founded which publication in 1963",
+  "Meanjin", "Juke", "The Big Issue", "Oz", "D", 17, 29, 26, 28, phoneafriend8]
+
+  r60 = ["Which king of England was known as 'the Hammer of the Scots'",
+  "William II", "Henry I", "Richard II", "Edward I", "D", 22, 25, 19, 34, phoneafriend7]
+
+  r61 = ["In 1861, a gold watch served as the trophy for which famous sporting event",
+  "Melbourne Cup", "Wimbledon", "America's Cup", "PGA Championship", "A", 37, 39, 8, 16, phoneafriend6("A")]
+
+  r62 = ["What is the capital of Greenland",
+  "Nuuk", "Attu", "Kolding", "Herning", "A", 28, 26, 27, 19, phoneafriend7]
+
+  r63 = ["Which insect shorted out an early supercomputer and inspired the term 'computer bug'"
+  "Moth", "Roach", "Fly", "Beetle", "A", 31, 17, 40, 12, phoneafriend6("A")]
+
+  r64 = ["In the children's book series, where is Paddington Bear originally from",
+  "India", "Peru", "Canada", "Iceland", "B", 25, 29, 29, 21, phoneafriend5("B")]
+
+  r65 = ["Who is credited with inventing the first mass-produced helicopter"
+  "Igor Sikorsky", "Elmer Sperry", "Ferdinand von Zeppelin", "Gottlieb Daimler", "A", 21, 17, 35, 27, phoneafriend8]
+
+
   # Placing the questions into their difficuly categories:
 
-  $questions100 = [q1, q2, q3, q4, q5]
-  $questions200 = [q6, q7, q8, q9, q10]
-  $questions300 = [q11, q12, q13, q14, q15]
-  $questions500 = [q16, q17, q18, q19, q20]
-  $questions1000 = [q21, q22, q23, q24, q25]
-  $questions1500 = [q26, q27, q28, q29, q30]
-  $questions2500 = [q31, q32, q33, q34, q35]
-  $questions4k = [q36, q37, q38, q39, q40]
-  $questions6k = [q41, q42, q43, q44, q45]
-  $questions10k = [q46, q47, q48, q49, q50]
-  $questions20k = [q51, q52, q53]
-  $questions50k = [q54, q55, q56]
-  $questions100k = [q57, q58, q59]
-  $questions250k = [q60, q61, q62]
-  $questions1million = [q63, q64, q65]
+  $questions100 = [q1, q2, q3, q4, q5, r1, r2, r3, r4, r5]
+  $questions200 = [q6, q7, q8, q9, q10, r6, r7, r8, r9, r10]
+  $questions300 = [q11, q12, q13, q14, q15, r11, r12, r13, r14, r15]
+  $questions500 = [q16, q17, q18, q19, q20, r16, r17, r18, r19, r20]
+  $questions1000 = [q21, q22, q23, q24, q25, r21, r22, r23, r24, r25]
+  $questions1500 = [q26, q27, q28, q29, q30, r26, r27, r28, r29, r30]
+  $questions2500 = [q31, q32, q33, q34, q35, r31, r32, r33, r34, r35]
+  $questions4k = [q36, q37, q38, q39, q40, r36, r37, r38, r39, r40]
+  $questions6k = [q41, q42, q43, q44, q45, r41, r42, r43, r44, r45]
+  $questions10k = [q46, q47, q48, q49, q50, r46, r47, r48, r49, r50]
+  $questions20k = [q51, q52, q53, r51, r52, r53]
+  $questions50k = [q54, q55, q56, r54, r55, r56]
+  $questions100k = [q57, q58, q59, r57, r58, r59]
+  $questions250k = [q60, q61, q62, r60, r61, r62]
+  $questions1million = [q63, q64, q65, r63, r64, r65]
 
   # Generating a new, random question stack for each game:
 
