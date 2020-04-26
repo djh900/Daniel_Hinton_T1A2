@@ -100,9 +100,9 @@ module PlayMillionaire
           if questioncounter < 5
             prize = "0"
           elsif questioncounter < 10
-            prize = "1,000"
+            prize = "$1,000"
           else 
-            prize = "10,000"
+            prize = "$10,000"
           end
           array1 = ["\nI'm sorry, that's the wrong answer!",
           "The correct answer was #{question[5]}",
