@@ -37,3 +37,5 @@ The project is pretty much complete. Time to put on a few episodes of the show a
 There is one marking criteria I will have to clear up as it makes zero sense to me: **Utilises** operating system or IDE features which facilitate the execution of the application. I hope that I have done that, even though I don't know what it means. Will clear up tomorrow.
 
 This process was frustrating. Writing the app was very fun. But the marking criteria was too restrictive and demanding. I don't expect to go into a job and be presented with criteria like that when writing a project. I expect more freedom, while still adhering to coding standards like file structures.
+
+I wasn't able to create a timer for each question. I am not sure if it possible to do in Ruby, or if it was my skills not being advanced enough that I couldn't do it. Oh well.
