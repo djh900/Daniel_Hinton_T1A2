@@ -315,7 +315,7 @@ module QuestionBank
   "Dijon", "Geneva", "Toulouse", "Marseille", "B", 17, 71, 8, 4, phoneafriend2("B")]
 
   r20 = ["100 kilometres per hour is equal to approximately how many miles per hour",
-  "40", "50", "60", "70", "D", 12, 29, 43, 16, phoneafriend3("D")]
+  "40", "50", "60", "70", "C", 12, 29, 43, 16, phoneafriend3("C")]
 
   r21 = ["What sitcom theme begins with the lyrics 'Whatever happened to predictability? The milkman, the paperboy, evening TV",
   "Family Matters", "The Golden Girls", "Full House", "Cheers", "C", 28, 9, 49, 14, phoneafriend4("C")]
