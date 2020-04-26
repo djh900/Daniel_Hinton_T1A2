@@ -15,11 +15,10 @@ The deadline for all features listed here is Sunday, 26 April 2020
   - Phone a Friend
   - 50/50
 * Create walk away feature
-* Find four gems
+* Find gems
   - Gem one (colorize)
   - Gem two (tty-pie)
   - Gem three (tty-spinner)
-  - Gem four (unit-test)
 * Create README.md file
 * Create licence
 * Manually test Application
@@ -35,4 +34,3 @@ Optional:
 * Add a timer to the questions
 * Double the question bank size
 * Create a confetti animation when user answers all questions correctly
-* Create an achievements section in the main menu
