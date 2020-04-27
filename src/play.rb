@@ -7,8 +7,8 @@ gemfile do
   gem 'tty-pie'
 end
 
-require_relative 'src/functions.rb'
-require_relative 'src/asciiart'
+require_relative 'functions.rb'
+require_relative 'asciiart'
 
 require 'colorize'
 require 'tty-spinner'
