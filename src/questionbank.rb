@@ -479,7 +479,8 @@ module QuestionBank
 
     questionlist = [$questions100, $questions200, $questions300, $questions500,
       $questions1000, $questions1500, $questions2500, $questions4k, $questions6k,
-      $questions10k, $questions20k, $questions50k, $questions100k, $questions250k, $questions1million]
+      $questions10k, $questions20k, $questions50k, $questions100k, $questions250k,
+      $questions1million]
 
     for question in questionlist
       questionstack << question.sample
