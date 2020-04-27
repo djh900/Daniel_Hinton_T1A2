@@ -14,12 +14,6 @@ You can install Ruby here: https://rubyinstaller.org/
 
 Then, using your computer's command line, navigate to the root folder 'Daniel_Hinton_T1A2'
 
-You must have bundler installed to get the required gems for this program.
-
-If you do not have bundler installed, type `gem install bundler` into your command line.
-
-Next, install the project's gems using the command `bundle install`
-
 You're now ready to go! type in `ruby play.rb` and get ready to play for $1 million!
 
 # Software Development Plan
@@ -135,7 +129,5 @@ Optional:
 
 ## Troubleshooting
 Make sure you have the latest version of Ruby installed. You can check this on your command line with the command `ruby -v`. The latest version is 2.7.0
-
-Also make sure you have installed the gems using bundler, as explained above.
 
 If you encounter any errors with the program, you can create an issue log on github: https://github.com/djh900/Daniel_Hinton_T1A2/issues
