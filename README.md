@@ -14,7 +14,7 @@ You can install Ruby here: https://rubyinstaller.org/
 
 Then, using your computer's command line, navigate to the root folder 'Daniel_Hinton_T1A2'
 
-You're now ready to go! type in `ruby play.rb` and get ready to play for $1 million!
+You're now ready to go! type in `bash PLAY.sh` and get ready to play for $1 million!
 
 # Software Development Plan
 ![wwtbam_logo](./img/logo-large.jpg)
