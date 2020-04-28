@@ -113,7 +113,7 @@ module PlayMillionaire
           Functions::cheque(username, prize) unless questioncounter < 5
           exit
         else
-          puts "Error: Invalid response"
+          puts "\nError: Invalid response"
         end
       end
     end
