@@ -11,7 +11,6 @@ module PlayMillionaire
     include EddieLines
     include AsciiArt
 
-
     $moneytree = {1 => "$100", 2 => "$200", 3 => "$300", 4 => "$500", 
       5 => "$1,000 and your first safe level", 6 => "$1,500", 7 => "$2,500",
       8 => "$4,000", 9 => "$6,000", 10 => "$10,000 and your second safe level",
